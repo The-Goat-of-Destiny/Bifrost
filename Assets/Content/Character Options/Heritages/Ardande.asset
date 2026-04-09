@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db1221503a3b3784193986709a8fcebf, type: 3}
+  m_Name: Ardande
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 0}
+  Level: 0
+  Traits: e00100001e000000
+  Description: 'You descend from wood elementals or have some other heritage influenced
+    by the elemental Plane of Wood. You might have green, mossy skin, vines that
+    grow from your head instead of hair, or thin appendages that resemble twigs.
+    You gain the ardande trait, in addition to the traits from your ancestry. You
+    also gain low-light vision, or you gain darkvision if your ancestry already has
+    low-light vision.
+
+    
+
+    You can choose from ardande feats, geniekin feats,
+    and feats from your ancestry whenever you gain an ancestry feat.'
+  Versatile: 1

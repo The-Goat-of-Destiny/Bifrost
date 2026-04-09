@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4a3e16a9c3656148b882ce988ca2ae7, type: 3}
+  m_Name: Danny
+  m_EditorClassIdentifier: 
+  Level: 1
+  Class: {fileID: 11400000, guid: 736452ae70bbd7f448b0da353353cae2, type: 2}
+  Ancestry: {fileID: 11400000, guid: 8ff10c5d8bde14943ae5ee8cd9b4096d, type: 2}
+  Heritage: {fileID: 11400000, guid: eae6f946975570840a8029e6bab45080, type: 2}
+  Background: {fileID: 11400000, guid: 302941405df05924d816ac3ad2dcbdf2, type: 2}
+  AbilityScores: 000000000000000000000000000000000000000000000000
+  Health: 0

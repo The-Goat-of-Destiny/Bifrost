@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67b65647550402b4ea5ce4b50b465336, type: 3}
+  m_Name: Sure Strike
+  m_EditorClassIdentifier: 
+  Level: 1
+  Traits: 60000000bc000000
+  Description: The next time you make an attack roll before the end of your turn,
+    roll it twice and use the better result. The attack ignores circumstance penalties
+    to the attack roll and any flat check required due to the target being concealed
+    or hidden. You are then temporarily immune to sure strike for 10 minutes.
+  Traditions: 0000000001000000

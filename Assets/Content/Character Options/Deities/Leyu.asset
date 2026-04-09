@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d54f6a94bc0d994a8da32a492a937ed, type: 3}
+  m_Name: Leyu
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 21300000, guid: 26574ddaea5bf02428c817bc0c8e703d, type: 3}
+  Level: 0
+  Traits: 
+  Description: 
+  HealFont: 1
+  HarmFont: 0
+  Domains:
+  - {fileID: 11400000, guid: 0645905789ba1944a95dd48b1de7c82a, type: 2}
+  - {fileID: 11400000, guid: 7e5e3310bd23eaf4083e587306e673f4, type: 2}
+  - {fileID: 11400000, guid: 6194e70b5971ec2488b3695309de3d0a, type: 2}
+  - {fileID: 11400000, guid: 15171167986df2042a2fb8238f83f631, type: 2}
+  AltDomains: []
+  ClericSpells:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

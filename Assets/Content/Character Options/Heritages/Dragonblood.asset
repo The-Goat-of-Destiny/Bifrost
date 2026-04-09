@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db1221503a3b3784193986709a8fcebf, type: 3}
+  m_Name: Dragonblood
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 0}
+  Level: 0
+  Traits: e001000088000000
+  Description: You're descended in some way from a dragon. Your physical features
+    might show this outwardly, with a pair of draconic horns, patches of scaly skin,
+    or even a tail, or you might develop an internal reserve of draconic power. You
+    gain the dragonblood trait, in addition to the traits from your ancestry. Add
+    Draconic to your ancestry's list of additional languages (allowing you to choose
+    it as a language if your Intelligence modifier is positive). When you roll a
+    success on a saving throw against a fear effect, you get a critical success instead.
+    You can choose from dragonblood feats and feats from your ancestry whenever you
+    gain an ancestry feat.
+  Versatile: 1

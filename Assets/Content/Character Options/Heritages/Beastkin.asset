@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db1221503a3b3784193986709a8fcebf, type: 3}
+  m_Name: Beastkin
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 0}
+  Level: 0
+  Traits: 6b0100003100000032000000
+  Description: The blood of a beast flows through your veins, granting you the ferocity
+    and might of animals. Only creatures with the humanoid trait can take the beastkin
+    versatile heritage. Choose a type of animal such as bat, eagle, shark, spider,
+    tyrannosaurus, wasp, or wolf. This is the type of animal tied to your heritage
+    and is known as your inherent animal. You gain the beast and beastkin traits,
+    in addition to the traits from your ancestry. You gain the Change Shape ability.
+    A beastkin's hybrid form is their natural shape. You can choose from beastkin
+    feats and feats from your ancestry whenever you gain an ancestry feat.
+  Versatile: 1

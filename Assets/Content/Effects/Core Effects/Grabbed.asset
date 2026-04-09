@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b72bfbd5d489af4a92fea4b263b0c49, type: 3}
+  m_Name: Grabbed
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 21300000, guid: 537e8295e2a62924a8508a0d1f78a3b8, type: 3}
+  Riders:
+  - {fileID: 11400000, guid: 0bdc7d15653e6b64480ccf4ca2ee3385, type: 2}
+  - {fileID: 11400000, guid: f06eef2f56ece3a4b8f478227d23ffa9, type: 2}
+  Modifiers: []

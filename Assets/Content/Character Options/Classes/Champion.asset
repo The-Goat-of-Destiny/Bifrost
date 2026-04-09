@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc2eeb86feefe55499135a9c19a8652f, type: 3}
+  m_Name: Champion
+  m_EditorClassIdentifier: 
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: ad8c81531ae822a43a8164480c6d72cb, type: 3}
+  Level: 0
+  Traits: 
+  GrantedFeatures: []
+  Description: 
+  Health: 10
+  PerceptionProficiency: 1
+  FortitudeProficiency: 2
+  ReflexProficiency: 1
+  WillProficiency: 2
+  ClassFeatures:
+  - Feature: {fileID: 11400000, guid: 9e64b52c37444ae47b7969c8295aaf52, type: 2}
+    Level: 1

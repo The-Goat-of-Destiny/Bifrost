@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db1221503a3b3784193986709a8fcebf, type: 3}
+  m_Name: Nephilim
+  m_EditorClassIdentifier: 
+  Traits: e00100003d010000
+  Description: Your nature is influenced by celestials, fiends, or monitors. This
+    manifests as a combination of features that belie your heritage, such as golden
+    eyes, a halo, horns, or a tail. You gain the nephilim trait, in addition to the
+    traits from your ancestry. You gain low-light vision, or you gain darkvision
+    if your ancestry already has low-light vision. You can choose from nephilim feats
+    and feats from your ancestry whenever you gain an ancestry feat.
+  Versatile: 1

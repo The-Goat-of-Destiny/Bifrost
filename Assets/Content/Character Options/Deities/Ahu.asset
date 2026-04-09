@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d54f6a94bc0d994a8da32a492a937ed, type: 3}
+  m_Name: Ahu
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 0}
+  Level: 0
+  Traits: 
+  Description: Whale Archon
+  HealFont: 1
+  HarmFont: 0
+  Domains:
+  - {fileID: 11400000, guid: 9e1403ae96ea01046a594d3fe8b0205d, type: 2}
+  - {fileID: 11400000, guid: df1916aa35702494c871a36418dd3575, type: 2}
+  - {fileID: 11400000, guid: 7e5e3310bd23eaf4083e587306e673f4, type: 2}
+  - {fileID: 11400000, guid: 823dc08e72d275f49b8a121536c8644a, type: 2}
+  AltDomains: []
+  ClericSpells:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

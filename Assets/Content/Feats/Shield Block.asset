@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8f4cc3828a42c4ebc5abee0fbbb92f, type: 3}
+  m_Name: Shield Block
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 0}
+  Level: 1
+  Traits: c2000000
+  GrantedFeatures:
+  - {fileID: 11400000, guid: 271694dc749fdba4a939a01b6a7751d6, type: 2}
+  Description: "Trigger While you have your shield raised, you would take physical
+    damage (bludgeoning, piercing, or slashing) from an attack.\r\nYou snap your
+    shield in place to ward off a blow. Your shield prevents you from taking an amount
+    of damage up to the shield\u2019s Hardness. You and the shield each take any
+    remaining damage, possibly breaking or destroying the shield."
+  ruleElements: []

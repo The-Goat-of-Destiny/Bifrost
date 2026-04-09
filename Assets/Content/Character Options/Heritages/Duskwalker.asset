@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db1221503a3b3784193986709a8fcebf, type: 3}
+  m_Name: Duskwalker
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 0}
+  Level: 0
+  Traits: 5a0000008e000000
+  Description: Thanks to an ancient bargain, your soul has been reborn as a duskwalker,
+    a planar scion with a connection to psychopomps and the Boneyard. You gain the
+    duskwalker trait. You also gain low-light vision, or you gain darkvision if your
+    ancestry already has low-light vision. Neither your body nor your spirit can
+    ever become undead. You can select from duskwalker feats and feats from your
+    ancestry whenever you gain an ancestry feat.
+  Versatile: 1

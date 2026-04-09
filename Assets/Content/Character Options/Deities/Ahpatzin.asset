@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d54f6a94bc0d994a8da32a492a937ed, type: 3}
+  m_Name: Ahpatzin
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 0}
+  Level: 0
+  Traits: 
+  Description: Lord of the Divs
+  HealFont: 0
+  HarmFont: 1
+  Domains:
+  - {fileID: 11400000, guid: c5caf7c594c3bf345810b613e9d18e43, type: 2}
+  - {fileID: 11400000, guid: ef90b8d44ac45cd4f8fb278426236395, type: 2}
+  - {fileID: 11400000, guid: 0e1b4ddc6c343b743b316d9d50a0d579, type: 2}
+  - {fileID: 11400000, guid: c1e3dc197ea99884f843fd54683769a3, type: 2}
+  AltDomains: []
+  ClericSpells:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

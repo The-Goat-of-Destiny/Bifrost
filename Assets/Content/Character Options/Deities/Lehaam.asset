@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d54f6a94bc0d994a8da32a492a937ed, type: 3}
+  m_Name: Lehaam
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 0}
+  Level: 0
+  Traits: 1d000000
+  GrantedFeatures: []
+  Description: Eagle Archon
+  HealFont: 1
+  HarmFont: 1
+  Domains:
+  - {fileID: 11400000, guid: d6342c4eff0b3bf4a97c98adabc024a4, type: 2}
+  - {fileID: 11400000, guid: 96664bc0beab4664b980ad0907d047d2, type: 2}
+  - {fileID: 11400000, guid: cbc0320626e9d1e4bb90b10cb71e5078, type: 2}
+  - {fileID: 11400000, guid: 6844bfaf32da10d449d72703920001d6, type: 2}
+  AltDomains: []
+  ClericSpells:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

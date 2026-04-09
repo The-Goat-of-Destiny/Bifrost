@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d54f6a94bc0d994a8da32a492a937ed, type: 3}
+  m_Name: Omen
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 21300000, guid: fc32abd5b3680ae46ba107afed63db04, type: 3}
+  Level: 0
+  Traits: 
+  GrantedFeatures: []
+  Description: 
+  HealFont: 0
+  HarmFont: 1
+  Domains:
+  - {fileID: 11400000, guid: ce64be58a95cf5f499767804bfe2a27e, type: 2}
+  - {fileID: 11400000, guid: 3653af22f58a1154faf24769e7a1204e, type: 2}
+  - {fileID: 11400000, guid: 53947e0cbcf6ec14c9a037342f52835b, type: 2}
+  - {fileID: 11400000, guid: 848c2d7477b8a6e4b92ffd1cafe6b53d, type: 2}
+  AltDomains: []
+  ClericSpells:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
