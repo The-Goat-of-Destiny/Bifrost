@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82d86eb0b93e70645908cd295384f8af, type: 3}
+  m_Name: Sneak Attack
+  m_EditorClassIdentifier: 
+  Rarity: 0
+  Icon: {fileID: 0}
+  Level: 0
+  Traits: 
+  GrantedFeatures: []
+  Description: 'When your enemy can''t properly defend itself, you take advantage
+    to deal extra damage. If you Strike a creature that has the off-guard condition
+    with an agile or finesse melee weapon, an agile or finesse unarmed attack, a
+    ranged weapon attack, or a ranged unarmed attack, you deal an extra 1d6 precision
+    damage. For a ranged attack with a thrown melee weapon, that weapon must also
+    be agile or finesse.
+
+    
+
+    As your rogue level increases, so does the
+    number of damage dice for your sneak attack. Increase the number of dice by one
+    at 5th, 11th, and 17th levels.'
+  ruleElements: []
