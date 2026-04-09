@@ -20,3 +20,15 @@ MonoBehaviour:
     ScaleWithEffectValue: 1
     Type: 1
     Target: AC
+  - Value: -1
+    ScaleWithEffectValue: 1
+    Type: 1
+    Target: Saves
+  - Value: -1
+    ScaleWithEffectValue: 1
+    Type: 1
+    Target: Skills
+  - Value: -1
+    ScaleWithEffectValue: 1
+    Type: 1
+    Target: Attack Rolls

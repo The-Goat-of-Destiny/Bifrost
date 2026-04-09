@@ -7,6 +7,8 @@ public class Token : MonoBehaviour
 {
     public CharacterData Character;
 
+    public Image TargetOverlay;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -58,6 +60,6 @@ public class Token : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        TargetOverlay.gameObject.SetActive(false);
     }
 }

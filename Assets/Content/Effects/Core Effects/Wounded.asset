@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Wounded
   m_EditorClassIdentifier: 
   HasValue: 1
-  Icon: {fileID: 21300000, guid: 6825372d9457b2c49ae12e93ddd474cd, type: 3}
+  Icon: {fileID: 21300000, guid: 030d61925e2f98f4d86e171153ec39e1, type: 3}
   Riders: []
   Modifiers: []

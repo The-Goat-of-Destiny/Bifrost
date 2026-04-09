@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Invisible
   m_EditorClassIdentifier: 
   HasValue: 0
-  Icon: {fileID: 21300000, guid: bdaebf3c29dcd33468223a50897f5171, type: 3}
+  Icon: {fileID: 21300000, guid: cdec13907ffc75749ab2ed436bec6b14, type: 3}
   Riders: []
   Modifiers: []

@@ -42,4 +42,14 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
+    private void LateUpdate()
+    {
+
+
+        foreach (Token token in TargettedTokens)
+        {
+            token.TargetOverlay.gameObject.SetActive(true);
+        }
+    }
 }
