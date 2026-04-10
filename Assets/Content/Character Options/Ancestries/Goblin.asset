@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cefe852d4062f774d8ce6582f711aa30, type: 3}
+  m_Name: Goblin
+  m_EditorClassIdentifier: 
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: afc52eb6b8851914980b5bc4d86b6681, type: 3}
+  Level: 0
+  Traits: e60100005a000000e7000000cb000000
+  GrantedFeatures:
+  - {fileID: 11400000, guid: a5d8aba4913c5ae43b382d5e75a87012, type: 2}
+  Description: 'Goblins are a short, scrappy, energetic people who have spent millennia
+    maligned and feared.
+
+    
+
+    The convoluted histories other people cling
+    to don''t interest goblins. These small folk live in the moment, and they prefer
+    tall tales over factual records. Goblin virtues are about being present, creative,
+    and honest. They strive to lead fulfilled lives, rather than worrying about how
+    their journeys will end. To tell stories, not nitpick the facts. To be small,
+    but dream big. Many goblins enjoy simpler delights like songs, fire, and eating,
+    and hate reading, dogs, and horses. Other goblins might have more complex pursuits,
+    though, such as tinkering with scraps or concocting snacks and explosives from
+    most anything.
+
+    
+
+    If you want a character who is eccentric, enthusiastic,
+    and fun-loving, you should play a goblin.'
+  Hitpoints: 6
+  Size: 1
+  Speed: 25
+  AttributeBoosts: 0100000005000000
+  FreeBoosts: 1
+  AttributeFlaws: 03000000
+  Languages: 00000000
+  AdditionalLanguages: 0

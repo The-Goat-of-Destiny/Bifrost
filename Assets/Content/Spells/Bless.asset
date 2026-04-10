@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67b65647550402b4ea5ce4b50b465336, type: 3}
+  m_Name: Bless
+  m_EditorClassIdentifier: 
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: feb8709f10385a94095b55fe8d0f625c, type: 3}
+  Level: 1
+  Traits: 27000000600000001d01000020010000
+  GrantedFeatures: []
+  Description: Blessings from beyond help your companions strike true. You and your
+    allies gain a +1 status bonus to attack rolls while within the emanation. Once
+    per round on subsequent turns, you can Sustain the spell to increase the emanation's
+    radius by 10 feet. Bless can counteract bane.
+  Traditions: 0100000003000000

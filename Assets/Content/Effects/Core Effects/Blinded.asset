@@ -14,9 +14,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasValue: 0
   Icon: {fileID: 21300000, guid: 2145b8beb455eff499c95fc2a83866b6, type: 3}
+  Description: 
   Riders: []
-  Modifiers:
-  - Value: -4
-    ScaleWithEffectValue: 0
-    Type: 1
-    Target: Perception
+  Modifiers: []
+  RuleElements:
+  - rid: 1956766982871449637
+  - rid: 1956766982871449638
+  - rid: 1956766982871449639
+  references:
+    version: 2
+    RefIds:
+    - rid: 1956766982871449637
+      type: {class: GrantVision, ns: , asm: Assembly-CSharp}
+      data:
+        visionType: 0
+        Range: 0
+        Precision: 0
+    - rid: 1956766982871449638
+      type: {class: GrantVision, ns: , asm: Assembly-CSharp}
+      data:
+        visionType: 2
+        Range: 0
+        Precision: 0
+    - rid: 1956766982871449639
+      type: {class: GrantVision, ns: , asm: Assembly-CSharp}
+      data:
+        visionType: 0
+        Range: 0
+        Precision: 0

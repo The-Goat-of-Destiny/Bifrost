@@ -6,6 +6,8 @@ using TMPro;
 
 public class Healthbar : MonoBehaviour
 {
+    [SerializeField]
+    private Token Representing;
     public Image Bar;
     public TMP_Text Text;
 
@@ -19,7 +21,7 @@ public class Healthbar : MonoBehaviour
     void Update()
     {
         // Set fill amount according to percentage of health remaining
-        if (Bar) Bar.fillAmount = 1f;
-        if (Text) Text.text = "100";
+        if (Bar) Bar.fillAmount = (float)Representing.Character.Health / (float)Representing.Character.MaxHealth;
+        if (Text) Text.text = Representing.Character.Health.ToString() + "/" + Representing.Character.MaxHealth.ToString();
     }
 }

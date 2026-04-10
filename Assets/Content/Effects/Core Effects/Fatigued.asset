@@ -13,22 +13,11 @@ MonoBehaviour:
   m_Name: Fatigued
   m_EditorClassIdentifier: 
   HasValue: 0
-  Icon: {fileID: 21300000, guid: bdaebf3c29dcd33468223a50897f5171, type: 3}
+  Icon: {fileID: 21300000, guid: 2145b8beb455eff499c95fc2a83866b6, type: 3}
+  Description: 
   Riders: []
-  Modifiers:
-  - Value: -1
-    ScaleWithEffectValue: 0
-    Type: 1
-    Target: AC
-  - Value: -1
-    ScaleWithEffectValue: 0
-    Type: 1
-    Target: Fortitude
-  - Value: -1
-    ScaleWithEffectValue: 0
-    Type: 1
-    Target: Reflex
-  - Value: -1
-    ScaleWithEffectValue: 0
-    Type: 1
-    Target: Will
+  Modifiers: []
+  RuleElements: []
+  references:
+    version: 2
+    RefIds: []

@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db1221503a3b3784193986709a8fcebf, type: 3}
   m_Name: Dhampir
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: 8d66961e6e4f6dd4aa519070b558d39f, type: 3}
   Level: 0
   Traits: e00100007d000000
+  GrantedFeatures: []
   Description: You are the scion of a vampire, half living and half undead, gifted
     with uncanny charm and grace, a bloodless pallor, and elongated incisors. You
     gain the dhampir trait, in addition to the traits from your ancestry. You have

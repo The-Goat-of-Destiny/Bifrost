@@ -12,8 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b72bfbd5d489af4a92fea4b263b0c49, type: 3}
   m_Name: Grabbed
   m_EditorClassIdentifier: 
+  HasValue: 0
   Icon: {fileID: 21300000, guid: 537e8295e2a62924a8508a0d1f78a3b8, type: 3}
+  Description: 
   Riders:
-  - {fileID: 11400000, guid: 0bdc7d15653e6b64480ccf4ca2ee3385, type: 2}
-  - {fileID: 11400000, guid: f06eef2f56ece3a4b8f478227d23ffa9, type: 2}
-  Modifiers: []
+  - Value: 1
+    Duration: 0
+    Context: {fileID: 11400000, guid: f06eef2f56ece3a4b8f478227d23ffa9, type: 2}
+  - Value: 1
+    Duration: 0
+    Context: {fileID: 11400000, guid: 0bdc7d15653e6b64480ccf4ca2ee3385, type: 2}
+  RuleElements: []
+  references:
+    version: 2
+    RefIds: []

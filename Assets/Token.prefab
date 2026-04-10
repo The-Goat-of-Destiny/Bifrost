@@ -975,5 +975,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0051e0eacaa13f04ab0712705fcfe277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Representing: {fileID: 4383817428581433160}
   Bar: {fileID: 9160548856079644711}
   Text: {fileID: 6773401960887422949}

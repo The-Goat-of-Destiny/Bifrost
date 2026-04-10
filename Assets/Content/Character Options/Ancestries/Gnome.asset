@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cefe852d4062f774d8ce6582f711aa30, type: 3}
+  m_Name: Gnome
+  m_EditorClassIdentifier: 
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: afc52eb6b8851914980b5bc4d86b6681, type: 3}
+  Level: 0
+  Traits: e60100005a000000e7000000ca000000
+  GrantedFeatures:
+  - {fileID: 11400000, guid: 8c531e326c26c8440bb9999ecf17f41c, type: 2}
+  Description: "Gnomes are short and hardy folk, with an unquenchable curiosity and
+    eccentric habits.\r\n\r\nLong ago, early gnome ancestors emigrated from the First
+    World, realm of the fey. While it's unclear why the first gnomes wandered to
+    Golarion, this lineage manifests in modern gnomes as bizarre reasoning, eccentricity,
+    obsessive tendencies, and what some see as naivete.\r\n\r\nAlways hungry for
+    new experiences, gnomes constantly wander both mentally and physically, attempting
+    to stave off a terrible ailment that threatens all of their people. This affliction,
+    known as the Bleaching, strikes gnomes who fail to dream, innovate, and take
+    in new experiences. The Bleaching slowly drains the color\u2014 literally\u2014from
+    gnomes, and it plunges those affected into states of deep depression that eventually
+    claim their lives. Very few gnomes survive this scourge, becoming deeply morose
+    and wise survivors known as bleachlings.\r\n\r\nIf you want a character with
+    boundless enthusiasm and an alien, fey outlook on morality and life, you should
+    play a gnome."
+  Hitpoints: 8
+  Size: 1
+  Speed: 25
+  AttributeBoosts: 0200000005000000
+  FreeBoosts: 1
+  AttributeFlaws: 00000000
+  Languages: 000000000000000000000000
+  AdditionalLanguages: 0

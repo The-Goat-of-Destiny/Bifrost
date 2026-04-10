@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b72bfbd5d489af4a92fea4b263b0c49, type: 3}
-  m_Name: Fascinated
+  m_Name: Bless Aura
   m_EditorClassIdentifier: 
   HasValue: 0
-  Icon: {fileID: 21300000, guid: bdaebf3c29dcd33468223a50897f5171, type: 3}
+  Icon: {fileID: 21300000, guid: feb8709f10385a94095b55fe8d0f625c, type: 3}
+  Description: Blessings from beyond help your companions strike true. You and your
+    allies gain a +1 status bonus to attack rolls while within the emanation. Once
+    per round on subsequent turns, you can Sustain the spell to increase the emanation's
+    radius by 10 feet. Bless can counteract bane.
   Riders: []
   Modifiers:
-  - Value: -2
+  - Value: 1
     ScaleWithEffectValue: 0
     Type: 1
-    Target: Perception
-  - Value: -2
-    ScaleWithEffectValue: 0
-    Type: 1
-    Target: Skill Checks
+    Target: Attack Rolls

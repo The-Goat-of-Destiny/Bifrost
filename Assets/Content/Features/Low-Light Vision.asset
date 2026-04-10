@@ -12,10 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82d86eb0b93e70645908cd295384f8af, type: 3}
   m_Name: Low-Light Vision
   m_EditorClassIdentifier: 
+  Rarity: 0
   Icon: {fileID: 0}
   Level: 0
   Traits: 
   GrantedFeatures: []
   Description: You can see in dim light as though it were bright light, and you ignore
     the concealed condition due to dim light.
-  ruleElements: []
+  ruleElements:
+  - rid: 1956766982871449613
+  references:
+    version: 2
+    RefIds:
+    - rid: 1956766982871449613
+      type: {class: GrantVision, ns: , asm: Assembly-CSharp}
+      data:
+        visionType: 0
+        Range: 60
+        Precision: 0

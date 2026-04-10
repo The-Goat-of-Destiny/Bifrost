@@ -55,7 +55,7 @@ public class ContextMenuWidget : MonoBehaviour, IPointerExitHandler
             foreach (MethodInfo method in Data.GetType().GetMethods())
             {
                 if (method.GetCustomAttributes(typeof(ContextMenu), true).Count() != 0)
-                    NewOption(Data, method, method.Name);
+                    NewOption(Data, method, method.GetCustomAttribute<ContextMenu>().menuItem);
             }
         }
         transform.position = Input.mousePosition - Vector3.right + Vector3.up;

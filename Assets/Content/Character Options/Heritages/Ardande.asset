@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db1221503a3b3784193986709a8fcebf, type: 3}
   m_Name: Ardande
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: afc52eb6b8851914980b5bc4d86b6681, type: 3}
   Level: 0
   Traits: e00100001e000000
   Description: 'You descend from wood elementals or have some other heritage influenced
@@ -22,8 +23,19 @@ MonoBehaviour:
     also gain low-light vision, or you gain darkvision if your ancestry already has
     low-light vision.
 
-    
 
-    You can choose from ardande feats, geniekin feats,
-    and feats from your ancestry whenever you gain an ancestry feat.'
+
+    You can choose from ardande feats, geniekin feats, and
+    feats from your ancestry whenever you gain an ancestry feat.'
+  GrantedFeatures:
+  - {fileID: 11400000, guid: 8c531e326c26c8440bb9999ecf17f41c, type: 2}
+  RuleElements:
+  - rid: 1956766982871449655
   Versatile: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 1956766982871449655
+      type: {class: TraitRule, ns: , asm: Assembly-CSharp}
+      data:
+        Traits: 1e000000

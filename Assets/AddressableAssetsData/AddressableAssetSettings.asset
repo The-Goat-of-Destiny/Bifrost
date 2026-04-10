@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: 2ee2211765c421e4d8dd9f6b6eab037c
   m_currentHash:
     serializedVersion: 2
-    Hash: 1b3740826ca7d221550e14b7f9d3f555
+    Hash: 9ff01e7d8653b7fb968576c0e4108a06
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_BundleLocalCatalog: 0
@@ -87,6 +87,13 @@ MonoBehaviour:
   m_LabelTable:
     m_LabelNames:
     - default
+    - Ancestry
+    - Background
+    - Heritage
+    - Class
+    - Feat
+    - Spell
+    - Deity
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: d487bb1c80b3bb44991149f677a61b3a, type: 2}

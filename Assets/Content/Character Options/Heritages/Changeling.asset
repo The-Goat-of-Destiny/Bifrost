@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db1221503a3b3784193986709a8fcebf, type: 3}
   m_Name: Changeling
   m_EditorClassIdentifier: 
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: bbcae057ef8701e41823102fad295b45, type: 3}
+  Level: 0
   Traits: e001000048000000
+  GrantedFeatures: []
   Description: Your mother was a hag. Your eyes' heterochromia is the most obvious
     signifier of this parentage, but you likely also have a slighter build, paler
     skin, and darker hair than most members of your other parent's ancestry. You

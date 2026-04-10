@@ -17,5 +17,7 @@ MonoBehaviour:
   Ancestry: {fileID: 11400000, guid: 8ff10c5d8bde14943ae5ee8cd9b4096d, type: 2}
   Heritage: {fileID: 11400000, guid: eae6f946975570840a8029e6bab45080, type: 2}
   Background: {fileID: 11400000, guid: 302941405df05924d816ac3ad2dcbdf2, type: 2}
+  Deity: {fileID: 0}
+  Effects: []
   AbilityScores: 000000000000000000000000000000000000000000000000
-  Health: 0
+  Health: 16

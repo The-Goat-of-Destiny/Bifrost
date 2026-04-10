@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cefe852d4062f774d8ce6582f711aa30, type: 3}
   m_Name: Dwarf
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: 246d562ecf4885d489ab658e0b7da7e8, type: 3}
   Level: 0
   Traits: e60100005a000000e70000008f000000
   GrantedFeatures:

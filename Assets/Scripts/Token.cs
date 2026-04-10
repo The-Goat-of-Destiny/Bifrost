@@ -51,10 +51,21 @@ public class Token : MonoBehaviour
         Target(false);
     }
 
+    [ContextMenu("Full Heal")]
+    public void FullHeal()
+    {
+        Character.Health = Character.MaxHealth;
+    }
+
     [ContextMenu("Edit")]
     public void Edit()
     {
         CharacterCreator.Instance.SelectCharacter(Character);
+    }
+
+    public void ApplyEffect(Effect effect)
+    {
+        Character.Effects.Add(new EffectInstance(effect));
     }
 
     // Update is called once per frame

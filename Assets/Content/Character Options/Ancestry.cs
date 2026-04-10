@@ -23,5 +23,7 @@ public class Ancestry : CharacterOption
         {
             Traits.Insert(0, Data.Trait.Ancestry);
         }
+        // If not found in Global Data for Ancestries, automatically add
+        if (Game.Data) if (!Game.Data.Ancestries.Contains(this)) Game.Data.Ancestries.Add(this);
     }
 }

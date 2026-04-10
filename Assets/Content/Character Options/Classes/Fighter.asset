@@ -12,22 +12,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc2eeb86feefe55499135a9c19a8652f, type: 3}
   m_Name: Fighter
   m_EditorClassIdentifier: 
+  Rarity: 0
   Icon: {fileID: 21300000, guid: 1ae771c29eed82942b74e7ef937f6f37, type: 3}
   Level: 0
   Traits: 
-  GrantedFeatures:
-  - {fileID: 11400000, guid: bb803a048df1f4d43a2d31a5acf835e1, type: 2}
-  - {fileID: 11400000, guid: 9e64b52c37444ae47b7969c8295aaf52, type: 2}
-  Description: 
+  GrantedFeatures: []
+  Description: Fighting for honor, greed, loyalty, or simply the thrill of battle,
+    you are an undisputed master of weaponry and combat techniques. You combine your
+    actions through clever combinations of opening moves, finishing strikes, and
+    counterattacks whenever your foes are unwise enough to drop their guard. Whether
+    you are a knight, mercenary, sharpshooter, or blade master, you have honed your
+    martial skills into an art form and perform devastating critical attacks on your
+    enemies.
   Health: 10
   PerceptionProficiency: 2
   FortitudeProficiency: 2
   ReflexProficiency: 2
   WillProficiency: 1
+  UnarmoredProficiency: 1
+  LightArmorProficiency: 1
+  MediumArmorProficiency: 1
+  HeavyArmorProficiency: 1
   ClassFeatures:
-  - Feature: {fileID: 11400000, guid: bb803a048df1f4d43a2d31a5acf835e1, type: 2}
-    Level: 1
-  - Feature: {fileID: 11400000, guid: 9e64b52c37444ae47b7969c8295aaf52, type: 2}
-    Level: 1
-  - Feature: {fileID: 11400000, guid: 224adc87b44c5ff4e8b7fd8cff637731, type: 2}
-    Level: 3
+  - Features:
+    - {fileID: 11400000, guid: bb803a048df1f4d43a2d31a5acf835e1, type: 2}
+    - {fileID: 11400000, guid: 271694dc749fdba4a939a01b6a7751d6, type: 2}
+  - Features: []
+  - Features:
+    - {fileID: 11400000, guid: 224adc87b44c5ff4e8b7fd8cff637731, type: 2}
+  - Features: []
+  - Features:
+    - {fileID: 11400000, guid: bf785ada45194f942a10ee5b0ad5b2f1, type: 2}
+  - Features: []
+  - Features:
+    - {fileID: 11400000, guid: 9b112642d592a2f45856a8cefce1e4ec, type: 2}
+    - {fileID: 11400000, guid: fa8835024b9e52e418628926f36ecc81, type: 2}
+  - Features: []
+  - Features:
+    - {fileID: 11400000, guid: d7b59ce19dc19de4bb4efd1f83a40fb2, type: 2}
+    - {fileID: 11400000, guid: b4d7b751a8e852a4499516822cff4eb0, type: 2}
+  - Features: []
+  - Features:
+    - {fileID: 11400000, guid: 4fae37ccc18e2894dafdc94f0c4ce6c6, type: 2}
+  - Features: []
+  - Features:
+    - {fileID: 11400000, guid: a54147db99cc7d9459ff783ecbdab4bc, type: 2}
+  - Features: []
+  - Features:
+    - {fileID: 11400000, guid: ae08328c8a632b54e94127a23247cff4, type: 2}
+    - {fileID: 11400000, guid: 64fdc02d98641324d822a5d940fc52ff, type: 2}
+    - {fileID: 11400000, guid: ed8e49fc86a07864db770376c21d7728, type: 2}
+  - Features: []
+  - Features:
+    - {fileID: 11400000, guid: 26b7902153c75e24cbacc66dd10f0678, type: 2}
+  - Features: []
+  - Features:
+    - {fileID: 11400000, guid: e9c602b53e91c3b41a2807879485a3c8, type: 2}
+  - Features: []

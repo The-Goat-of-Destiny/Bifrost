@@ -23,6 +23,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8ff10c5d8bde14943ae5ee8cd9b4096d, type: 2}
   - {fileID: 11400000, guid: 1e5dc6ede264bd54fa48ff9b6c0f75d2, type: 2}
   - {fileID: 11400000, guid: 8db364e16f1d8334bb406df2073a0ca3, type: 2}
+  - {fileID: 11400000, guid: 3b42864f8d8ed294196012161cd6cf97, type: 2}
+  - {fileID: 11400000, guid: fee3627426db2cd4a8d024e1766d9587, type: 2}
+  - {fileID: 11400000, guid: 817420eac6e5c5d4b8fbd9705ec9763f, type: 2}
+  - {fileID: 11400000, guid: d6d95a5ec5542ef48a8fa22a057a4556, type: 2}
+  - {fileID: 11400000, guid: 0f81c8cf75b4dd84a97f9b89031dabf2, type: 2}
   Backgrounds:
   - {fileID: 11400000, guid: 302941405df05924d816ac3ad2dcbdf2, type: 2}
   - {fileID: 11400000, guid: 66259577ff08eb64e9f33ea2e1239092, type: 2}

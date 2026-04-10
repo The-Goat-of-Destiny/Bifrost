@@ -8,13 +8,19 @@ public class Effect : ScriptableObject
     public bool HasValue = false;
     // Duration is handled by the instantiated effect and whatever applies the effect
     public Sprite Icon;
+
+    [Multiline]
+    public string Description;
+
     [Tooltip("A list of additional effects that last for as long as this effect is applied")]
-    public List<Effect> Riders = new();
-    public List<Modifier> Modifiers = new();
+    public List<EffectInstance> Riders = new();
+    //public List<Modifier> Modifiers = new();
+    [SerializeReference]
+    public List<RuleElement> RuleElements = new();
 }
 
 [System.Serializable]
-public class Modifier
+public class Modifier : RuleElement
 {
     public int Value = 1;
     [Tooltip("Whether to multiply the value by the value of the effect")]

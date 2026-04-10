@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cefe852d4062f774d8ce6582f711aa30, type: 3}
+  m_Name: Elf
+  m_EditorClassIdentifier: 
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: a5fe29b083645254e8fb82cff8335c0b, type: 3}
+  Level: 0
+  Traits: e60100005a000000e700000095000000
+  GrantedFeatures:
+  - {fileID: 11400000, guid: 8c531e326c26c8440bb9999ecf17f41c, type: 2}
+  Description: 'Elves are a tall, long-lived people with a strong tradition of art
+    and magic.
+
+    
+
+    As an ancient people, elves have seen great change and
+    have the perspective that can come only from watching the arc of history. After
+    leaving Golarion in ancient times, they returned to a changed land, and they
+    still struggle to reclaim their ancestral homes. Elves value kindness, intellect,
+    and beauty, with many elves striving to improve their manners, appearance, and
+    culture. Their studies delve into a level of detail that most shorter-lived peoples
+    find excessive or inefficient. Elves are often rather private people, steeped
+    in the secrets of their groves and kinship groups. They''re slow to build friendships
+    outside their kinsfolk, as elves who spend their lives among shorter-lived peoples
+    often become morose after watching generations of companions age and die. These
+    elves are known as Forlorn among their fellow elves.
+
+    
+
+    If you want
+    a character who is magical, mystical, and mysterious, you should play an elf.'
+  Hitpoints: 6
+  Size: 2
+  Speed: 30
+  AttributeBoosts: 0100000004000000
+  FreeBoosts: 1
+  AttributeFlaws: 02000000
+  Languages: 0000000000000000
+  AdditionalLanguages: 0

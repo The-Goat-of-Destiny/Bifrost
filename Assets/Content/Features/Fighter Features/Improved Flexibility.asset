@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82d86eb0b93e70645908cd295384f8af, type: 3}
+  m_Name: Improved Flexibility
+  m_EditorClassIdentifier: 
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: 4d7635c366a76274c85747592d98d2f5, type: 3}
+  Level: 0
+  Traits: 
+  GrantedFeatures: []
+  Description: Your extensive experience gives you even greater ability to adapt
+    to each day's challenges. When you use combat flexibility, you can gain two fighter
+    feats instead of one. While the first feat must still be 8th level or lower,
+    the second feat can be up to 14th level, and you can use the first feat to meet
+    the prerequisites of the second feat. You must meet all of the feats' prerequisites.
+  ruleElements: []

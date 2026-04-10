@@ -10,15 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82d86eb0b93e70645908cd295384f8af, type: 3}
-  m_Name: Bravery
+  m_Name: Greater Weapon Specialization
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: b11f9c52da2945740b5078d84177a9ab, type: 3}
   Level: 0
   Traits: 
   GrantedFeatures: []
-  Description: Having faced countless foes and the chaos of battle, you have learned
-    how to stand strong in the face of fear. Your proficiency rank for Will saves
-    increases to expert. When you roll a success at a Will save against a fear effect,
-    you get a critical success instead. In addition, anytime you gain the frightened
-    condition, reduce its value by 1.
+  Description: Your damage from weapon specialization increases to 4 with weapons
+    and unarmed attacks in which you're an expert, 6 if you're a master, and 8 if
+    you're legendary.
   ruleElements: []

@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db1221503a3b3784193986709a8fcebf, type: 3}
   m_Name: Beastkin
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: 4669ac34b52ed2d47b923b0dfc68a555, type: 3}
   Level: 0
   Traits: 6b0100003100000032000000
+  GrantedFeatures: []
   Description: The blood of a beast flows through your veins, granting you the ferocity
     and might of animals. Only creatures with the humanoid trait can take the beastkin
     versatile heritage. Choose a type of animal such as bat, eagle, shark, spider,

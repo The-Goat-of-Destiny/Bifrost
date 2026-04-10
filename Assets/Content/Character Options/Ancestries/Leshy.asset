@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cefe852d4062f774d8ce6582f711aa30, type: 3}
+  m_Name: Leshy
+  m_EditorClassIdentifier: 
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: afc52eb6b8851914980b5bc4d86b6681, type: 3}
+  Level: 0
+  Traits: e60100005a000000e700000011010000
+  GrantedFeatures:
+  - {fileID: 11400000, guid: 8c531e326c26c8440bb9999ecf17f41c, type: 2}
+  - {fileID: 11400000, guid: 089d25758bb7361499d1972cf164a43e, type: 2}
+  Description: "Leshies are immortal nature spirits placed in small plant bodies,
+    seeking to experience the world.\r\n\r\nLeshies are immortal spirits of nature
+    temporarily granted physical forms. As guardians and emissaries of the environment,
+    leshies are \u201Cborn\u201D when a skilled druid or other master of primal magic
+    conducts a ritual to create a suitable vessel, and then a spirit chooses that
+    vessel to be their temporary home. Leshies are self-sufficient from the moment
+    the ritual ends, though it isn't uncommon for leshies to maintain lifelong bonds
+    with their creators. Many leshies relish the opportunity to interact with the
+    physical world. While most leshy spirits are ancient, they rarely recall past
+    lifetimes and see their new life as a chance to experience the wonders of the
+    world once more.\r\n\r\nIf you want to play a character who is curious and connected
+    to nature, you should play a leshy."
+  Hitpoints: 8
+  Size: 1
+  Speed: 25
+  AttributeBoosts: 0200000003000000
+  FreeBoosts: 1
+  AttributeFlaws: 04000000
+  Languages: 0000000000000000
+  AdditionalLanguages: 0

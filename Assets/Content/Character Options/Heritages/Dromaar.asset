@@ -12,11 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db1221503a3b3784193986709a8fcebf, type: 3}
   m_Name: Dromaar
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: afc52eb6b8851914980b5bc4d86b6681, type: 3}
   Level: 0
   Traits: 5a0000008a000000
   Description: Orcish strength emboldens your bloodline. You have a green tinge to
     your skin and other indicators of orc heritage. You gain the orc trait, the dromaar
     trait, and low-light vision. When you gain an ancestry feat, you can choose from
     dromaar and orc feats in addition to those from your ancestry.
+  GrantedFeatures:
+  - {fileID: 11400000, guid: 8c531e326c26c8440bb9999ecf17f41c, type: 2}
+  RuleElements: []
   Versatile: 1
+  references:
+    version: 2
+    RefIds: []

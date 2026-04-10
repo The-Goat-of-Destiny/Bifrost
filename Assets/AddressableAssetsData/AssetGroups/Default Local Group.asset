@@ -16,7 +16,43 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 2ee2211765c421e4d8dd9f6b6eab037c
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 1e5dc6ede264bd54fa48ff9b6c0f75d2
+    m_Address: Assets/Content/Character Options/Ancestries/Dwarf.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Ancestry
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1e9d7ac098422854d84b305ed9dce070
+    m_Address: Assets/Content/Character Options/Ancestries/Human.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Ancestry
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b42864f8d8ed294196012161cd6cf97
+    m_Address: Assets/Content/Character Options/Ancestries/Elf.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Ancestry
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8db364e16f1d8334bb406df2073a0ca3
+    m_Address: Assets/Content/Character Options/Ancestries/Orc.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Ancestry
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8ff10c5d8bde14943ae5ee8cd9b4096d
+    m_Address: Assets/Content/Character Options/Ancestries/Kobold.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Ancestry
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a14541ac5ae0fc4448f54c3d4a4271c4
+    m_Address: Assets/Content/Character Options/Ancestries/Kitsune.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Ancestry
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: f4eb6d8016b40a04c9433af1f81af3b3, type: 2}
   m_SchemaSet:

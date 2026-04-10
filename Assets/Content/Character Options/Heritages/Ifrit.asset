@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db1221503a3b3784193986709a8fcebf, type: 3}
   m_Name: Ifrit
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: 9723f377c4a425244ae3a758ccff0bf4, type: 3}
   Level: 0
   Traits: 5a000000e9000000
   Description: You descend from fire elementals or bear the mark of the Inner Spheres,
@@ -22,4 +23,16 @@ MonoBehaviour:
     heat effects as if they were one step less severe (incredible heat becomes extreme,
     extreme heat becomes severe, and so on). You can choose from ifrit feats and
     feats from your ancestry whenever you gain an ancestry feat.
+  GrantedFeatures: []
+  RuleElements:
+  - rid: 1956766982871449656
   Versatile: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 1956766982871449656
+      type: {class: ResistanceRule, ns: , asm: Assembly-CSharp}
+      data:
+        DamageType: Fire
+        Resistance: 0
+        Formula: 1/2 Level

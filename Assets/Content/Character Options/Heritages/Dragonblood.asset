@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db1221503a3b3784193986709a8fcebf, type: 3}
   m_Name: Dragonblood
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: 9723f377c4a425244ae3a758ccff0bf4, type: 3}
   Level: 0
   Traits: e001000088000000
+  GrantedFeatures: []
   Description: You're descended in some way from a dragon. Your physical features
     might show this outwardly, with a pair of draconic horns, patches of scaly skin,
     or even a tail, or you might develop an internal reserve of draconic power. You

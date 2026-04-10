@@ -45,3 +45,4 @@ public static class Game
 
 public enum Proficiency { Untrained, Trained, Expert, Master, Legendary }
 public enum Rarity { Common, Uncommon, Rare, Unique }
+public enum MovementType { Land, Swim, Climb, Fly, Burrow }

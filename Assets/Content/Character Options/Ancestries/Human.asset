@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cefe852d4062f774d8ce6582f711aa30, type: 3}
   m_Name: Human
   m_EditorClassIdentifier: 
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: bbcae057ef8701e41823102fad295b45, type: 3}
+  Level: 0
   Traits: e6010000e7000000e6000000
+  GrantedFeatures: []
   Description: "Humans are diverse and adaptable people with wide potential and deep
     ambitions.\r\n\r\nAs unpredictable and varied as any of Golarion's peoples, humans
     have exceptional drive and the capacity to endure and expand. Though many civilizations

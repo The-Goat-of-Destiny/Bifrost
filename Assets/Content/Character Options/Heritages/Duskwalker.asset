@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db1221503a3b3784193986709a8fcebf, type: 3}
   m_Name: Duskwalker
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: 8d66961e6e4f6dd4aa519070b558d39f, type: 3}
   Level: 0
   Traits: 5a0000008e000000
+  GrantedFeatures: []
   Description: Thanks to an ancient bargain, your soul has been reborn as a duskwalker,
     a planar scion with a connection to psychopomps and the Boneyard. You gain the
     duskwalker trait. You also gain low-light vision, or you gain darkvision if your

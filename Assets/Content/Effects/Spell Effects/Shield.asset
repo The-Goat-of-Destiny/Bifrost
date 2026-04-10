@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b72bfbd5d489af4a92fea4b263b0c49, type: 3}
+  m_Name: Shield
+  m_EditorClassIdentifier: 
+  HasValue: 0
+  Icon: {fileID: 21300000, guid: f6b8b85cbdc82ce439a41ae3d56d57ee, type: 3}
+  Description: 'You raise a magical shield of force. This counts as using the Raise
+    a Shield action, giving you a +1 circumstance bonus to AC until the start of
+    your next turn, but it doesn''t require a hand to use.
+
+    
+
+    While the
+    spell is in effect, you can use the Shield Block reaction with your magic shield.
+    The shield has Hardness 5. You can use the spell''s reaction to reduce damage
+    from any spell or magical effect, even if it doesn''t deal physical damage. After
+    you use Shield Block, the spell ends and you can''t cast it again for 10 minutes.'
+  Riders: []
+  Modifiers:
+  - Value: 1
+    ScaleWithEffectValue: 0
+    Type: 3
+    Target: AC

@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasValue: 0
   Icon: {fileID: 21300000, guid: 9a4dda656cd86604681efb5fd9723a6b, type: 3}
+  Description: 
   Riders:
-  - {fileID: 11400000, guid: 64f647466d78057469e74a366716ceb5, type: 2}
-  Modifiers:
-  - Value: -10
-    ScaleWithEffectValue: 0
-    Type: 0
-    Target: Speed
+  - Value: 1
+    Duration: 0
+    Context: {fileID: 11400000, guid: 64f647466d78057469e74a366716ceb5, type: 2}
+  RuleElements: []
+  references:
+    version: 2
+    RefIds: []

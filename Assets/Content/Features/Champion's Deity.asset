@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82d86eb0b93e70645908cd295384f8af, type: 3}
   m_Name: Champion's Deity
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: feb8709f10385a94095b55fe8d0f625c, type: 3}
   Level: 0
   Traits: 
   GrantedFeatures: []

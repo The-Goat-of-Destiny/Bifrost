@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db1221503a3b3784193986709a8fcebf, type: 3}
   m_Name: Nephilim
   m_EditorClassIdentifier: 
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: 24b6e3818cfb59b4d8451dc2c22fbf39, type: 3}
+  Level: 0
   Traits: e00100003d010000
+  GrantedFeatures: []
   Description: Your nature is influenced by celestials, fiends, or monitors. This
     manifests as a combination of features that belie your heritage, such as golden
     eyes, a halo, horns, or a tail. You gain the nephilim trait, in addition to the

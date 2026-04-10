@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cefe852d4062f774d8ce6582f711aa30, type: 3}
+  m_Name: Halfling
+  m_EditorClassIdentifier: 
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: 9723f377c4a425244ae3a758ccff0bf4, type: 3}
+  Level: 0
+  Traits: e6010000e7000000d80000005a000000
+  GrantedFeatures:
+  - {fileID: 11400000, guid: 393e99026a8714f49b19861456b99d72, type: 2}
+  Description: 'Halflings are a short, resilient people who exhibit remarkable curiosity
+    and humor.
+
+    
+
+    Claiming no place as their own, halflings control few
+    settlements larger than villages. Instead, they frequently live among humans
+    within larger cities, carving out small communities alongside taller folk. Optimistic,
+    cheerful, and driven by powerful wanderlust, halflings make up for their short
+    stature with an abundance of bravado. At once excitable and easygoing, halflings
+    are the best kind of opportunists, and their passions favor joy over violence.
+    While their curiosity sometimes drives them toward adventure, halflings also
+    carry strong ties to house and home.
+
+    
+
+    If you want to play a character
+    who must contend with these opposing drives toward adventure and comfort, you
+    should play a halfling.'
+  Hitpoints: 6
+  Size: 1
+  Speed: 25
+  AttributeBoosts: 0100000003000000
+  FreeBoosts: 1
+  AttributeFlaws: 00000000
+  Languages: 0000000000000000
+  AdditionalLanguages: 0

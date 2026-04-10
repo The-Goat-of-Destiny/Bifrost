@@ -10,21 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b72bfbd5d489af4a92fea4b263b0c49, type: 3}
-  m_Name: Stupefied
+  m_Name: Fasctinated
   m_EditorClassIdentifier: 
   HasValue: 1
   Icon: {fileID: 21300000, guid: bdaebf3c29dcd33468223a50897f5171, type: 3}
+  Description: 
   Riders: []
-  Modifiers:
-  - Value: -1
-    ScaleWithEffectValue: 1
-    Type: 1
-    Target: Int
-  - Value: -1
-    ScaleWithEffectValue: 1
-    Type: 1
-    Target: Wis
-  - Value: -1
-    ScaleWithEffectValue: 1
-    Type: 1
-    Target: Cha
+  Modifiers: []
+  RuleElements: []
+  references:
+    version: 2
+    RefIds: []

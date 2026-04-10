@@ -13,6 +13,11 @@ MonoBehaviour:
   m_Name: Slowed
   m_EditorClassIdentifier: 
   HasValue: 1
-  Icon: {fileID: 21300000, guid: bdaebf3c29dcd33468223a50897f5171, type: 3}
+  Icon: {fileID: 21300000, guid: 1e8aa00653677a04aae8f77fb33ff71a, type: 3}
+  Description: 
   Riders: []
   Modifiers: []
+  RuleElements: []
+  references:
+    version: 2
+    RefIds: []

@@ -12,7 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b72bfbd5d489af4a92fea4b263b0c49, type: 3}
   m_Name: Prone
   m_EditorClassIdentifier: 
+  HasValue: 0
   Icon: {fileID: 21300000, guid: 6249ac7a57988b2419732f7922a6b216, type: 3}
+  Description: 
   Riders:
-  - {fileID: 11400000, guid: 0bdc7d15653e6b64480ccf4ca2ee3385, type: 2}
-  Modifiers: []
+  - Value: 1
+    Duration: 0
+    Context: {fileID: 11400000, guid: 0bdc7d15653e6b64480ccf4ca2ee3385, type: 2}
+  RuleElements: []
+  references:
+    version: 2
+    RefIds: []

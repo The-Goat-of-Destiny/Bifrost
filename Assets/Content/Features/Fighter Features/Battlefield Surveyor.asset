@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82d86eb0b93e70645908cd295384f8af, type: 3}
+  m_Name: Battlefield Surveyor
+  m_EditorClassIdentifier: 
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: b066c869b51f9384fa8ac9cce36b4648, type: 3}
+  Level: 0
+  Traits: 
+  GrantedFeatures: []
+  Description: Whether taking stock of an enemy army or simply standing guard, you
+    excel at observing your foes. Your proficiency rank for Perception increases
+    to master. In addition, you gain a +2 circumstance bonus to Perception checks
+    for initiative, making you faster to react during combat.
+  ruleElements:
+  - rid: 1956766982871449624
+  references:
+    version: 2
+    RefIds:
+    - rid: 1956766982871449624
+      type: {class: ProficiencyRule, ns: , asm: Assembly-CSharp}
+      data:
+        Target: Perception
+        proficiency: 3

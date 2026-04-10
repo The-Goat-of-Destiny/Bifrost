@@ -18,4 +18,5 @@ MonoBehaviour:
   Traits: 
   GrantedFeatures: []
   Description: 
-  ruleElements: []
+  ruleElements:
+  - {fileID: 0}

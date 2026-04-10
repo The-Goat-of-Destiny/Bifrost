@@ -12,19 +12,24 @@ public class CharacterData : ScriptableObject
     [ExposedField] public Background Background;
     [ExposedField] public Deity Deity;
 
-    public List<Effect> Effects = new();
+    public List<EffectInstance> Effects = new();
 
     public int GetModifier(string target)
     {
         int result = 0;
-        foreach (Effect effect in Effects)
+        foreach (EffectInstance effect in Effects)
         {
-            foreach (Modifier mod in effect.Modifiers)
+            foreach (RuleElement ruleElement in effect.Context.RuleElements)
             {
-                if (mod.Target == target)
+                // Apply modifications from Rule Element Modifiers
+                if (ruleElement.GetType() == typeof(Modifier))
                 {
-                    if (mod.ScaleWithEffectValue) result += mod.Value * 1;
-                    else result += mod.Value;
+                    Modifier mod = ((Modifier)ruleElement);
+                    if (mod.Target == target)
+                    {
+                        if (mod.ScaleWithEffectValue) result += mod.Value * 1;
+                        else result += mod.Value;
+                    }
                 }
             }
         }
@@ -37,8 +42,8 @@ public class CharacterData : ScriptableObject
     [NamedArray(new string[] {"Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"})]
     public List<int> AbilityScores = new(6);
 
-    [ExposedProperty] public int Strength { get => AbilityScores[(int)Data.Attribute.Strength]; }
-    [ExposedProperty] public int Dexterity { get => AbilityScores[(int)Data.Attribute.Dexterity]; }
+    [ExposedProperty] public int Strength { get => AbilityScores[(int)Data.Attribute.Strength] + GetModifier("Str"); }
+    [ExposedProperty] public int Dexterity { get => AbilityScores[(int)Data.Attribute.Dexterity] + GetModifier("Dex"); }
     [ExposedProperty] public int Constitution { get => AbilityScores[(int)Data.Attribute.Constitution]; }
     [ExposedProperty] public int Intelligence { get => AbilityScores[(int)Data.Attribute.Intelligence]; }
     [ExposedProperty] public int Wisdom { get => AbilityScores[(int)Data.Attribute.Wisdom]; }
