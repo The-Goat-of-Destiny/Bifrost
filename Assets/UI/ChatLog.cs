@@ -5,9 +5,16 @@ using UnityEngine;
 
 public class ChatLog : MonoBehaviour
 {
+    public static ChatLog Instance;
+
     [SerializeField] private Message MessagePrefab;
     [SerializeField] private Transform Layout;
     [SerializeField] private TMP_Text ChatWindow;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()

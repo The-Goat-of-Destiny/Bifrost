@@ -51,7 +51,14 @@ public class Statsheet : MonoBehaviour
                     }
                     else
                     {
-                        NewStat(field.Name + " : " + field.GetValue(Data).ToString());
+                        if (field.FieldType == typeof(Composite))
+                        {
+                            NewStat(field.Name + " : " + ((Composite)field.GetValue(Data)).Total(Data).ToString());
+                        }
+                        else
+                        {
+                            NewStat(field.Name + " : " + field.GetValue(Data).ToString());
+                        }
                     }
             }
         }

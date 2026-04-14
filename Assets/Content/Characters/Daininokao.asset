@@ -17,5 +17,108 @@ MonoBehaviour:
   Ancestry: {fileID: 11400000, guid: a14541ac5ae0fc4448f54c3d4a4271c4, type: 2}
   Heritage: {fileID: 11400000, guid: eae6f946975570840a8029e6bab45080, type: 2}
   Background: {fileID: 11400000, guid: 66259577ff08eb64e9f33ea2e1239092, type: 2}
+  Deity: {fileID: 0}
+  Effects: []
   AbilityScores: 000000000000000000000000000000000000000000000000
+  Strength:
+    Base: 0
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors: []
+    Context: []
+    RelevantModifiers: []
+  Dexterity:
+    Base: 0
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors: []
+    Context: []
+    RelevantModifiers: []
+  Constitution:
+    Base: 0
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors: []
+    Context: []
+    RelevantModifiers: []
+  Intelligence:
+    Base: 0
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors: []
+    Context: []
+    RelevantModifiers: []
+  Wisdom:
+    Base: 0
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors: []
+    Context: []
+    RelevantModifiers: []
+  Charisma:
+    Base: 0
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors: []
+    Context: []
+    RelevantModifiers: []
   Health: 0
+  AC:
+    Base: 10
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors:
+    - Dexterity
+    - Level
+    Context: []
+    RelevantModifiers: []
+  Reflex:
+    Base: 0
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors:
+    - Dexterity
+    - Level
+    Context: []
+    RelevantModifiers: []
+  Will:
+    Base: 0
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors:
+    - Wisdom
+    - Level
+    Context: []
+    RelevantModifiers: []
+  Fortitude:
+    Base: 0
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors:
+    - Constitution
+    - Level
+    Context: []
+    RelevantModifiers: []
+  references:
+    version: 2
+    RefIds: []

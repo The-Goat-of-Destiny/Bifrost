@@ -18,4 +18,20 @@ public class EffectInstance
         Duration = duration;
         Value = value;
     }
+
+    public virtual void ApplyTo(CharacterData character)
+    {
+        foreach (RuleElement rule in Context.RuleElements)
+        {
+            rule.ApplyTo(character);
+        }
+    }
+
+    public virtual void RemoveFrom(CharacterData character)
+    {
+        foreach (RuleElement rule in Context.RuleElements)
+        {
+            rule.RemoveFrom(character);
+        }
+    }
 }

@@ -14,10 +14,124 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Level: 1
   Class: {fileID: 11400000, guid: 736452ae70bbd7f448b0da353353cae2, type: 2}
-  Ancestry: {fileID: 11400000, guid: 8ff10c5d8bde14943ae5ee8cd9b4096d, type: 2}
-  Heritage: {fileID: 11400000, guid: eae6f946975570840a8029e6bab45080, type: 2}
-  Background: {fileID: 11400000, guid: 302941405df05924d816ac3ad2dcbdf2, type: 2}
-  Deity: {fileID: 0}
-  Effects: []
+  Ancestry: {fileID: 11400000, guid: 8db364e16f1d8334bb406df2073a0ca3, type: 2}
+  Heritage: {fileID: 11400000, guid: 0a89fb41070ef3844a14ca792e35d92c, type: 2}
+  Background: {fileID: 11400000, guid: 66259577ff08eb64e9f33ea2e1239092, type: 2}
+  Deity: {fileID: 11400000, guid: 411fc86704500934292ff0adb177528e, type: 2}
+  Effects:
+  - Value: 1
+    Duration: 1
+    Context: {fileID: 11400000, guid: cd36f3560f1dced4f88a5f51c838c721, type: 2}
   AbilityScores: 000000000000000000000000000000000000000000000000
-  Health: 16
+  All:
+    Base: 0
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors: []
+    Context: []
+    RelevantModifiers: []
+  Strength:
+    Base: 0
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors: []
+    Context: []
+    RelevantModifiers: []
+  Dexterity:
+    Base: 0
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors: []
+    Context: []
+    RelevantModifiers: []
+  Constitution:
+    Base: 0
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors: []
+    Context: []
+    RelevantModifiers: []
+  Intelligence:
+    Base: 0
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors: []
+    Context: []
+    RelevantModifiers: []
+  Wisdom:
+    Base: 3
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors: []
+    Context: []
+    RelevantModifiers: []
+  Charisma:
+    Base: 0
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors: []
+    Context: []
+    RelevantModifiers: []
+  Health: 20
+  AC:
+    Base: 2
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors:
+    - Dexterity
+    - Level
+    - All
+    Context: []
+    RelevantModifiers: []
+  Reflex:
+    Base: 0
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors:
+    - Dexterity
+    - Level
+    Context: []
+    RelevantModifiers: []
+  Will:
+    Base: 3
+    Status: 2
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors:
+    - Wisdom
+    - Level
+    Context: []
+    RelevantModifiers: []
+  Fortitude:
+    Base: 0
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors:
+    - Constitution
+    - Level
+    Context: []
+    RelevantModifiers: []
+  references:
+    version: 2
+    RefIds: []

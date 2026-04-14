@@ -12,10 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f8d1cf5a8cb8bf4a979bbc409927a8a, type: 3}
   m_Name: Stride
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: 6960c6bd5088317429f7e0e033bee813, type: 3}
   Level: 0
   Traits: 35010000
-  GrantedFeatures: []
+  Prerequisites: []
   Description: You move up to your Speed.
+  GrantedFeatures: []
+  RuleElements: []
   CostType: 0
   ActionCost: 1
+  references:
+    version: 2
+    RefIds: []

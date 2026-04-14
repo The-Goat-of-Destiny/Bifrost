@@ -35,11 +35,14 @@ public class SelectionWindow : MonoBehaviour
             // Check if option passes filter
             //if (Filter != null && Filter.Check(option))
             {
-                OptionUI newOptionUI = Instantiate(OptionUIPrefab, transform);
-                newOptionUI.Option = option;
-                newOptionUI.UpdateVisuals();
-                // If option is already selected, modify visuals
-                //if (option == TargetField.GetValue(CreatorContext.SelectedCharacter))
+                if (option.CheckValidity(CreatorContext.SelectedCharacter))
+                {
+                    OptionUI newOptionUI = Instantiate(OptionUIPrefab, transform);
+                    newOptionUI.Option = option;
+                    newOptionUI.UpdateVisuals();
+                    // If option is already selected, modify visuals
+                    //if (option == TargetField.GetValue(CreatorContext.SelectedCharacter))
+                }
             }
         }
     }

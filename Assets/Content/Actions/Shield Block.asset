@@ -12,14 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f8d1cf5a8cb8bf4a979bbc409927a8a, type: 3}
   m_Name: Shield Block
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: 1458237dbb3c6d54f8fe9d39c0175d00, type: 3}
   Level: 0
   Traits: 
-  GrantedFeatures: []
+  Prerequisites: []
   Description: "Trigger While you have your shield raised, you would take physical
     damage (bludgeoning, piercing, or slashing) from an attack.\r\nYou snap your
     shield in place to ward off a blow. Your shield prevents you from taking an amount
     of damage up to the shield\u2019s Hardness. You and the shield each take any
     remaining damage, possibly breaking or destroying the shield."
+  GrantedFeatures: []
+  RuleElements: []
   CostType: 2
   ActionCost: 1
+  references:
+    version: 2
+    RefIds: []

@@ -6,8 +6,7 @@ using UnityEngine.Events;
 [CreateAssetMenu(fileName = "Feature", menuName = "Content/Character Options/Feature", order = 0)]
 public class Feature : CharacterOption
 {
-    [SerializeReference]
-    public List<RuleElement> ruleElements = new();
+
 }
 
 [System.Serializable]

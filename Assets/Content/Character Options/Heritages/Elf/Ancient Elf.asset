@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db1221503a3b3784193986709a8fcebf, type: 3}
+  m_Name: Ancient Elf
+  m_EditorClassIdentifier: 
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: 297ae300f92e1bb41a6674e96b3f513d, type: 3}
+  Level: 0
+  Traits: 
+  Description: In your long life, you've dabbled in many paths and many styles. A
+    typical ancient elf is at least 100 years old, though you might be younger at
+    the GM's discretion. Choose a class other than your own. You gain the multiclass
+    dedication feat for that class, even though you don't meet its level prerequisite.
+    You must still meet its other prerequisites to gain the feat.
+  GrantedFeatures: []
+  RuleElements: []
+  Versatile: 0
+  references:
+    version: 2
+    RefIds: []

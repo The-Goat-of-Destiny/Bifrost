@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8f4cc3828a42c4ebc5abee0fbbb92f, type: 3}
+  m_Name: Fleet
+  m_EditorClassIdentifier: 
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: 6960c6bd5088317429f7e0e033bee813, type: 3}
+  Level: 1
+  Traits: c2000000
+  Prerequisites: []
+  Description: You move more quickly on foot. Your Speed increases by 5 feet.
+  GrantedFeatures: []
+  RuleElements:
+  - rid: 1956766982871449682
+  references:
+    version: 2
+    RefIds:
+    - rid: 1956766982871449682
+      type: {class: Modifier, ns: , asm: Assembly-CSharp}
+      data:
+        Conditions: []
+        Value: 5
+        ScaleWithEffectValue: 0
+        Type: 0
+        Target: Speed

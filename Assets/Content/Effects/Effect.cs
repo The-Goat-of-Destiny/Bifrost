@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Effect", menuName = "Content/Effect", order = 0)]
@@ -17,17 +18,20 @@ public class Effect : ScriptableObject
     //public List<Modifier> Modifiers = new();
     [SerializeReference]
     public List<RuleElement> RuleElements = new();
-}
 
-[System.Serializable]
-public class Modifier : RuleElement
-{
-    public int Value = 1;
-    [Tooltip("Whether to multiply the value by the value of the effect")]
-    public bool ScaleWithEffectValue = false;
-    public enum ModType { Untyped, Status, Item, Circumstance, Ability }
-    public ModType Type = ModType.Untyped;
-    // Field doesn't appear in inspector, requires custom property drawer, using String for now
-    //public System.Reflection.FieldInfo Field;
-    public string Target;
+    public void ApplyTo(CharacterData character)
+    {
+        foreach (EffectInstance effect in Riders)
+        {
+            effect.ApplyTo(character);
+        }
+    }
+
+    public void RemoveFrom(CharacterData character)
+    {
+        foreach (EffectInstance effect in Riders)
+        {
+            effect.RemoveFrom(character);
+        }
+    }
 }

@@ -7,6 +7,9 @@ public class Token : MonoBehaviour
 {
     public CharacterData Character;
 
+    [Tooltip("For Testing")]
+    public SkillCheck SkillCheck = new();
+
     public Image TargetOverlay;
 
     // Start is called before the first frame update
@@ -63,9 +66,25 @@ public class Token : MonoBehaviour
         CharacterCreator.Instance.SelectCharacter(Character);
     }
 
+    [ContextMenu("Recalculate")]
+    public void Recalculate()
+    {
+        Character.Recalculate();
+    }
+
     public void ApplyEffect(Effect effect)
     {
-        Character.Effects.Add(new EffectInstance(effect));
+        EffectInstance effectInstance = new EffectInstance(effect);
+        Character.Effects.Add(effectInstance);
+        effectInstance.ApplyTo(Character);
+    }
+
+    public void Check()
+    {
+        Composite skill = ((Composite)typeof(CharacterData).GetField(SkillCheck.Skill).GetValue(Character));
+        RollData data = Dice.Check(SkillCheck.DC, skill);
+        //ChatLog.Instance.NewMessage(Character.name, data.Data.Total().ToString() + data.Result().ToString());
+        ChatLog.Instance.NewMessage(Character.name, data.ToString());
     }
 
     // Update is called once per frame

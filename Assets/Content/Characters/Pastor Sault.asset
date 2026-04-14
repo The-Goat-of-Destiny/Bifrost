@@ -15,9 +15,110 @@ MonoBehaviour:
   Level: 3
   Class: {fileID: 11400000, guid: 8b118959ba7a87d44a3a23fc445286f3, type: 2}
   Ancestry: {fileID: 11400000, guid: 1e5dc6ede264bd54fa48ff9b6c0f75d2, type: 2}
-  Heritage: {fileID: 0}
+  Heritage: {fileID: 11400000, guid: 5749c0f902f43c14da2e8e5d2cf24c0a, type: 2}
   Background: {fileID: 0}
   Deity: {fileID: 11400000, guid: db030d39d3073c54b8027a5fc6da4040, type: 2}
   Effects: []
   AbilityScores: 000000000000000000000000000000000000000000000000
+  Strength:
+    Base: 0
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors: []
+    Context: []
+    RelevantModifiers: []
+  Dexterity:
+    Base: 0
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors: []
+    Context: []
+    RelevantModifiers: []
+  Constitution:
+    Base: 0
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors: []
+    Context: []
+    RelevantModifiers: []
+  Intelligence:
+    Base: 0
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors: []
+    Context: []
+    RelevantModifiers: []
+  Wisdom:
+    Base: 0
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors: []
+    Context: []
+    RelevantModifiers: []
+  Charisma:
+    Base: 0
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors: []
+    Context: []
+    RelevantModifiers: []
   Health: 0
+  AC:
+    Base: 10
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors:
+    - Dexterity
+    - Level
+    Context: []
+    RelevantModifiers: []
+  Reflex:
+    Base: 0
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors:
+    - Dexterity
+    - Level
+    Context: []
+    RelevantModifiers: []
+  Will:
+    Base: 0
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors:
+    - Wisdom
+    - Level
+    Context: []
+    RelevantModifiers: []
+  Fortitude:
+    Base: 0
+    Status: 0
+    Circumstance: 0
+    Item: 0
+    Untyped: 0
+    Factors:
+    - Constitution
+    - Level
+    Context: []
+    RelevantModifiers: []
+  references:
+    version: 2
+    RefIds: []
