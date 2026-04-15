@@ -36,7 +36,7 @@ public class RollData
 
     public RollResult Result()
     {
-        int total = Roll + Data.Total();
+        int total = Roll + Data.Squash().Total();
         RollResult result;
         if (total <= DC - 10)
         {
@@ -74,11 +74,11 @@ public class RollData
 
     public override string ToString()
     {
-        string result = (Roll + Data.Total()).ToString();
+        string result = (Roll + Data.Squash().Total()).ToString();
         if (Result() == RollResult.CritSuccess) result += "<color=#00FF00>";
         else if (Result() == RollResult.CritFail) result += "<color=#FF0000>";
         else result += "<color=#000000>";
-        result += ": " + Roll.ToString() + "+ " + Data.Total().ToString() + " (" + Data.Base.ToString() + "+" + Data.Item.ToString() + "+" + Data.Status.ToString() + "+" + Data.Circumstance.ToString() + ")";
+        result += ": " + Roll.ToString() + " + (" + Data.Squash().ToString() + ")";
         result += " vs " + DC.ToString() + ":\n";
         if (Result() == RollResult.CritSuccess) result += "Critical Success";
         else if (Result() == RollResult.Success) result += "Success";

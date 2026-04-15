@@ -16,11 +16,40 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: d2a1e13935cedec45ba509916d4757c1, type: 3}
   Level: 0
   Traits: 
-  GrantedFeatures: []
+  Prerequisites: []
   Description: 
+  GrantedFeatures: []
+  RuleElements: []
   Health: 8
   PerceptionProficiency: 1
   FortitudeProficiency: 1
   ReflexProficiency: 1
   WillProficiency: 2
-  ClassFeatures: []
+  UnarmoredProficiency: 1
+  LightArmorProficiency: 0
+  MediumArmorProficiency: 0
+  HeavyArmorProficiency: 0
+  ClassFeatures:
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  references:
+    version: 2
+    RefIds: []

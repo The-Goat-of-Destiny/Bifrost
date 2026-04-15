@@ -53,7 +53,7 @@ public class Statsheet : MonoBehaviour
                     {
                         if (field.FieldType == typeof(Composite))
                         {
-                            NewStat(field.Name + " : " + ((Composite)field.GetValue(Data)).Total(Data).ToString());
+                            NewStat(field.Name + " : " + ((Composite)field.GetValue(Data)).Squash().ToString());
                         }
                         else
                         {

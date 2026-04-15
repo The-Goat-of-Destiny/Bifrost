@@ -25,113 +25,151 @@ MonoBehaviour:
   AbilityScores: 000000000000000000000000000000000000000000000000
   All:
     Base: 0
-    Status: 0
-    Circumstance: 0
-    Item: 0
-    Untyped: 0
-    Factors: []
+    Factors:
+    - Level
     Context: []
-    RelevantModifiers: []
+    RelevantModifiers:
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
   Strength:
     Base: 0
-    Status: 0
-    Circumstance: 0
-    Item: 0
-    Untyped: 0
     Factors: []
     Context: []
     RelevantModifiers: []
   Dexterity:
     Base: 0
-    Status: 0
-    Circumstance: 0
-    Item: 0
-    Untyped: 0
     Factors: []
     Context: []
     RelevantModifiers: []
   Constitution:
     Base: 0
-    Status: 0
-    Circumstance: 0
-    Item: 0
-    Untyped: 0
     Factors: []
     Context: []
     RelevantModifiers: []
   Intelligence:
     Base: 0
-    Status: 0
-    Circumstance: 0
-    Item: 0
-    Untyped: 0
     Factors: []
     Context: []
     RelevantModifiers: []
   Wisdom:
     Base: 3
-    Status: 0
-    Circumstance: 0
-    Item: 0
-    Untyped: 0
     Factors: []
     Context: []
     RelevantModifiers: []
   Charisma:
     Base: 0
-    Status: 0
-    Circumstance: 0
-    Item: 0
-    Untyped: 0
     Factors: []
     Context: []
     RelevantModifiers: []
   Health: 20
   AC:
-    Base: 2
-    Status: 0
-    Circumstance: 0
-    Item: 0
-    Untyped: 0
+    Base: 10
     Factors:
     - Dexterity
-    - Level
     - All
     Context: []
-    RelevantModifiers: []
+    RelevantModifiers:
+    - rid: 1956766982871449687
+    - rid: 1956766982871449687
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
   Reflex:
     Base: 0
-    Status: 0
-    Circumstance: 0
-    Item: 0
-    Untyped: 0
     Factors:
     - Dexterity
-    - Level
+    - All
     Context: []
-    RelevantModifiers: []
+    RelevantModifiers:
+    - rid: 1956766982871449687
+    - rid: 1956766982871449687
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
   Will:
     Base: 3
-    Status: 2
-    Circumstance: 0
-    Item: 0
-    Untyped: 0
     Factors:
     - Wisdom
-    - Level
+    - All
     Context: []
-    RelevantModifiers: []
+    RelevantModifiers:
+    - rid: 1956766982871449687
+    - rid: 1956766982871449687
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
   Fortitude:
     Base: 0
-    Status: 0
-    Circumstance: 0
-    Item: 0
-    Untyped: 0
     Factors:
     - Constitution
-    - Level
+    - All
     Context: []
-    RelevantModifiers: []
+    RelevantModifiers:
+    - rid: 1956766982871449687
+    - rid: 1956766982871449687
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
+    - rid: 1956766982871449687
+    - rid: 1956766982871449688
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 1956766982871449687
+      type: {class: Modifier, ns: , asm: Assembly-CSharp}
+      data:
+        Conditions: []
+        Value: 0
+        ScaleWithEffectValue: 1
+        Type: 1
+        Target: All
+    - rid: 1956766982871449688
+      type: {class: Modifier, ns: , asm: Assembly-CSharp}
+      data:
+        Conditions: []
+        Value: -1
+        ScaleWithEffectValue: 1
+        Type: 1
+        Target: All

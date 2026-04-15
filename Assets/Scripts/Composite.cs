@@ -7,12 +7,9 @@ using UnityEngine;
 [Serializable]
 public class Composite
 {
-    public int Base;
-    public int Status;
-    public int Circumstance;
-    public int Item;
-    public int Untyped;
+    public object Source;
 
+    public int Base;
     public List<string> Factors = new();
     public List<string> Context = new();
 
@@ -31,59 +28,71 @@ public class Composite
         Context = _Context;
     }
 
-    public virtual int Total(object source = null)
+    /// <summary>
+    /// Squashes Relevant Modifiers and sub-modifiers into a CompositePackage
+    /// </summary>
+    /// <param name="source"></param>
+    /// <returns>Data structure containing each type of bonus/penalty</returns>
+    public virtual CompositePackage Squash()
     {
-        Composite Result = this;
-        foreach (Modifier modifier in RelevantModifiers)
+        int _base = 0;
+        int status = 0;
+        int circumstance = 0;
+        int item = 0;
+        int untyped = 0;
+        List<Modifier> modifiers = SquashModifiers();
+        foreach (string factor in Factors)
+        {
+            FieldInfo field = Source.GetType().GetField(factor);
+            if (field.FieldType == typeof(Composite))
+            {
+                Composite composite = (Composite)field.GetValue(Source);
+            }
+            else if (field.FieldType == typeof(int))
+            {
+                untyped += (int)field.GetValue(Source);
+            }
+        }
+        foreach (Modifier modifier in modifiers)
         {
             switch (modifier.Type)
             {
                 case Modifier.ModType.Status:
-                    Result.Status = Mathf.Max(Status, modifier.Value);
+                    status = Mathf.Max(status, modifier.Value);
                     break;
                 case Modifier.ModType.Circumstance:
-                    Result.Circumstance = Mathf.Max(Status, modifier.Value);
+                    circumstance = Mathf.Max(circumstance, modifier.Value);
                     break;
                 case Modifier.ModType.Item:
-                    Result.Item = Mathf.Max(Status, modifier.Value);
+                    item = Mathf.Max(item, modifier.Value);
                     break;
                 default:
-                    Result.Untyped += modifier.Value;
+                    untyped += modifier.Value;
                     break;
             }
         }
-        if (source != null)
-            Result = Result.Squash(source);
-        return Result.Base + Result.Status + Result.Circumstance + Result.Item + Result.Untyped;
+        return new CompositePackage(_base, status, circumstance, item, untyped);
     }
 
-    public virtual Composite Squash(object source)
+    public List<Modifier> SquashModifiers()
     {
-        Composite Result = (Composite)MemberwiseClone();
-        foreach (string factorName in Factors)
+        List<Modifier> modifiers = RelevantModifiers;
+        foreach (string factor in Factors)
         {
-            FieldInfo factor = source.GetType().GetField(factorName);
-            //Debug.Log(factorName);
-            if (factor.FieldType == typeof(Composite))
+            FieldInfo field = Source.GetType().GetField(factor);
+            if (field.FieldType == typeof(Composite))
             {
-                Composite composite = ((Composite)factor.GetValue(source)).Squash(source);
-                Result.Base += composite.Base;
-                Result.Status = Mathf.Max(Result.Status, composite.Status);
-                Result.Circumstance = Mathf.Max(Result.Status, composite.Status);
-                Result.Item = Mathf.Max(Result.Status, composite.Status);
-                Result.Untyped += composite.Untyped;
-            }
-            else if (factor.ReflectedType == typeof(int))
-            {
-                Result.Untyped += (int)factor.GetValue(source);
+                Composite composite = (Composite)field.GetValue(Source);
+                modifiers.AddRange(composite.RelevantModifiers);
+                modifiers.AddRange(composite.SquashModifiers());
             }
         }
-        return Result;
+        return modifiers;
     }
 
-    public string ToString(object source)
+    public override string ToString()
     {
-        return Total(source).ToString();
+        return Squash().ToString();
     }
 }
 
@@ -95,40 +104,32 @@ public class ProfComposite : Composite
     {
         Proficiency = _Proficiency;
     }
+}
 
-    public override int Total(object source = null)
+public struct CompositePackage
+{
+    public int Base;
+    public int Status;
+    public int Circumstance;
+    public int Item;
+    public int Untyped;
+
+    public CompositePackage(int _base = 0, int status=0, int circumstance=0, int item=0, int untyped=0)
     {
-        ProfComposite Result = this;
-        if (source != null)
-            Result = ProfSquash(source);
-        return Result.Base + Result.Status + Result.Circumstance + Result.Item + Result.Untyped;
+        Base = _base;
+        Status = status;
+        Circumstance = circumstance;
+        Item = item;
+        Untyped = untyped;
     }
 
-    public ProfComposite ProfSquash(object source)
+    public int Total()
     {
-        ProfComposite Result = (ProfComposite)MemberwiseClone();
-        foreach (string factorName in Factors)
-        {
-            FieldInfo factor = source.GetType().GetField(factorName);
-            if (factor.ReflectedType.BaseType == typeof(Composite))
-            {
-                ProfComposite composite = (ProfComposite)(factor.GetValue(source) as ProfComposite).Squash(source);
-                Result.Base += composite.Base;
-                Result.Status = Mathf.Max(Result.Status, composite.Status);
-                Result.Circumstance = Mathf.Max(Result.Status, composite.Status);
-                Result.Item = Mathf.Max(Result.Status, composite.Status);
-                Result.Untyped += composite.Untyped;
-                if (factor.ReflectedType == typeof(ProfComposite))
-                {
-                    if (composite.Proficiency > Result.Proficiency)
-                        Result.Proficiency = composite.Proficiency;
-                }
-            }
-            else if (factor.ReflectedType == typeof(int))
-            {
-                Result.Untyped += (int)factor.GetValue(source);
-            }
-        }
-        return Result;
+        return Base + Status + Circumstance + Item + Untyped;
+    }
+
+    public override readonly string ToString()
+    {
+        return Base.ToString() + " + " + Status.ToString() + " + " + Circumstance.ToString() + " + " + Item.ToString() + " + " + Untyped.ToString();
     }
 }

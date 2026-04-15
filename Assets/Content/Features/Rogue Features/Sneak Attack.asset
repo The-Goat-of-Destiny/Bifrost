@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Sneak Attack
   m_EditorClassIdentifier: 
   Rarity: 0
-  Icon: {fileID: 21300000, guid: 912f2333824ee3946814a450e92ab11a, type: 3}
+  Icon: {fileID: 21300000, guid: 030fe9155171ea14ca6626d94e9b13d1, type: 3}
   Level: 0
   Traits: 
-  GrantedFeatures: []
+  Prerequisites: []
   Description: 'When your enemy can''t properly defend itself, you take advantage
     to deal extra damage. If you Strike a creature that has the off-guard condition
     with an agile or finesse melee weapon, an agile or finesse unarmed attack, a
@@ -29,4 +29,8 @@ MonoBehaviour:
     As your rogue level increases, so does the number
     of damage dice for your sneak attack. Increase the number of dice by one at 5th,
     11th, and 17th levels.'
-  ruleElements: []
+  GrantedFeatures: []
+  RuleElements: []
+  references:
+    version: 2
+    RefIds: []

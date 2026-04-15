@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Stunned
   m_EditorClassIdentifier: 
   HasValue: 1
-  Icon: {fileID: 21300000, guid: bdaebf3c29dcd33468223a50897f5171, type: 3}
+  Icon: {fileID: 21300000, guid: e691198d56e3a1848b5009e1ff94dbb5, type: 3}
+  Description: 
   Riders: []
-  Modifiers: []
+  RuleElements: []
+  references:
+    version: 2
+    RefIds: []

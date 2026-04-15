@@ -18,5 +18,79 @@ MonoBehaviour:
   Heritage: {fileID: 11400000, guid: eae6f946975570840a8029e6bab45080, type: 2}
   Background: {fileID: 11400000, guid: 302941405df05924d816ac3ad2dcbdf2, type: 2}
   Deity: {fileID: 11400000, guid: 6f018baa19d60324ba34ef3046c86384, type: 2}
+  Effects: []
   AbilityScores: 000000000000000000000000000000000000000000000000
+  All:
+    Base: 0
+    Factors:
+    - Level
+    Context: []
+    RelevantModifiers: []
+  Strength:
+    Base: 0
+    Factors:
+    - All
+    Context: []
+    RelevantModifiers: []
+  Dexterity:
+    Base: 0
+    Factors:
+    - All
+    Context: []
+    RelevantModifiers: []
+  Constitution:
+    Base: 0
+    Factors:
+    - All
+    Context: []
+    RelevantModifiers: []
+  Intelligence:
+    Base: 0
+    Factors:
+    - All
+    Context: []
+    RelevantModifiers: []
+  Wisdom:
+    Base: 0
+    Factors:
+    - All
+    Context: []
+    RelevantModifiers: []
+  Charisma:
+    Base: 0
+    Factors:
+    - All
+    Context: []
+    RelevantModifiers: []
   Health: 0
+  AC:
+    Base: 10
+    Factors:
+    - Dexterity
+    - All
+    Context: []
+    RelevantModifiers: []
+  Reflex:
+    Base: 0
+    Factors:
+    - Dexterity
+    - All
+    Context: []
+    RelevantModifiers: []
+  Will:
+    Base: 0
+    Factors:
+    - Wisdom
+    - All
+    Context: []
+    RelevantModifiers: []
+  Fortitude:
+    Base: 0
+    Factors:
+    - Constitution
+    - All
+    Context: []
+    RelevantModifiers: []
+  references:
+    version: 2
+    RefIds: []

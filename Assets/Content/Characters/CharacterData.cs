@@ -1,6 +1,7 @@
 using CustomAttributes;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Character Data", menuName = "Content/Character", order = 0)]
@@ -44,6 +45,14 @@ public class CharacterData : ScriptableObject
     /// </summary>
     public void Recalculate()
     {
+        foreach (FieldInfo field in GetType().GetFields())
+        {
+            if (field.FieldType == typeof(Composite))
+            {
+                ((Composite)field.GetValue(this)).Source = this;
+            }
+        }
+
         for (int i = 0; i < Level; i++)
         {
             foreach (CharacterOption option in Class.ClassFeatures[i].Features)
@@ -70,7 +79,7 @@ public class CharacterData : ScriptableObject
     [ExposedField] public Composite Wisdom = new(0);// { get => AbilityScores[(int)Data.Attribute.Wisdom]; }
     [ExposedField] public Composite Charisma = new(0);// { get => AbilityScores[(int)Data.Attribute.Charisma]; }
 
-    [ExposedProperty] public int MaxHealth { get => Ancestry.Hitpoints + (Class.Health + Constitution.Total()) * Level; }
+    [ExposedProperty] public int MaxHealth { get => Ancestry.Hitpoints + (Class.Health + Constitution.Squash().Total()) * Level; }
     [ExposedField] public int Health;
     [ExposedField] public Composite AC = new(10, new List<string> { "Dexterity", "Level"});//, new List<Composite> { Dexterity });//{ get => 10 + Dexterity + Level; }
     [ExposedField] public Composite Reflex = new(0, new List<string> { "Dexterity", "Level"});// { get => Dexterity + Level; }
@@ -89,5 +98,10 @@ public class CharacterData : ScriptableObject
                 visionTypes[field.GetValue().] = field.GetValue().;
             }
         }*/
+    }
+
+    private void OnValidate()
+    {
+        Recalculate();
     }
 }

@@ -20,67 +20,45 @@ MonoBehaviour:
   Deity: {fileID: 0}
   Effects: []
   AbilityScores: 000000000000000000000000000000000000000000000000
+  All:
+    Base: 0
+    Factors:
+    - Level
+    Context: []
+    RelevantModifiers: []
   Strength:
     Base: 0
-    Status: 0
-    Circumstance: 0
-    Item: 0
-    Untyped: 0
     Factors: []
     Context: []
     RelevantModifiers: []
   Dexterity:
     Base: 0
-    Status: 0
-    Circumstance: 0
-    Item: 0
-    Untyped: 0
     Factors: []
     Context: []
     RelevantModifiers: []
   Constitution:
     Base: 0
-    Status: 0
-    Circumstance: 0
-    Item: 0
-    Untyped: 0
     Factors: []
     Context: []
     RelevantModifiers: []
   Intelligence:
     Base: 0
-    Status: 0
-    Circumstance: 0
-    Item: 0
-    Untyped: 0
     Factors: []
     Context: []
     RelevantModifiers: []
   Wisdom:
     Base: 0
-    Status: 0
-    Circumstance: 0
-    Item: 0
-    Untyped: 0
     Factors: []
     Context: []
     RelevantModifiers: []
   Charisma:
     Base: 0
-    Status: 0
-    Circumstance: 0
-    Item: 0
-    Untyped: 0
     Factors: []
     Context: []
     RelevantModifiers: []
   Health: 0
   AC:
     Base: 10
-    Status: 0
-    Circumstance: 0
-    Item: 0
-    Untyped: 0
     Factors:
     - Dexterity
     - Level
@@ -88,10 +66,6 @@ MonoBehaviour:
     RelevantModifiers: []
   Reflex:
     Base: 0
-    Status: 0
-    Circumstance: 0
-    Item: 0
-    Untyped: 0
     Factors:
     - Dexterity
     - Level
@@ -99,10 +73,6 @@ MonoBehaviour:
     RelevantModifiers: []
   Will:
     Base: 0
-    Status: 0
-    Circumstance: 0
-    Item: 0
-    Untyped: 0
     Factors:
     - Wisdom
     - Level
@@ -110,10 +80,6 @@ MonoBehaviour:
     RelevantModifiers: []
   Fortitude:
     Base: 0
-    Status: 0
-    Circumstance: 0
-    Item: 0
-    Untyped: 0
     Factors:
     - Constitution
     - Level

@@ -16,13 +16,15 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 24d6d232d36615b43bf6538b9859dd9e, type: 3}
   Level: 0
   Traits: 
-  GrantedFeatures: []
+  Prerequisites: []
   Description: "You are skilled and opportunistic. Using your sharp wits and quick
     reactions, you take advantage of your opponents\u2019 missteps and strike where
     it hurts most. You play a dangerous game, seeking thrills and testing your skills,
     and likely don\u2019t care much for any laws that happen to get in your way.
     While the path of every rogue is unique and riddled with danger, the one thing
     you all share in common is the breadth and depth of your skills."
+  GrantedFeatures: []
+  RuleElements: []
   Health: 8
   PerceptionProficiency: 2
   FortitudeProficiency: 1
@@ -39,3 +41,23 @@ MonoBehaviour:
   - Features: []
   - Features:
     - {fileID: 11400000, guid: c3bfc39989665b64c96f75080a06e554, type: 2}
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  - Features: []
+  references:
+    version: 2
+    RefIds: []
