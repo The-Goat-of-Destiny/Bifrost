@@ -70,21 +70,21 @@ public class CharacterData : ScriptableObject
 
     [Tooltip("Modifies all checks except Flat Checks")]
     [ExposedField]
-    public Composite All = new(0);
+    public Composite All = new("All", 0);
 
-    [ExposedField] public Composite Strength = new(0);// { get => AbilityScores[(int)Data.Attribute.Strength] + GetModifier("Str"); }
-    [ExposedField] public Composite Dexterity = new(0);// { get => AbilityScores[(int)Data.Attribute.Dexterity] + GetModifier("Dex"); }
-    [ExposedField] public Composite Constitution = new(0);// { get => AbilityScores[(int)Data.Attribute.Constitution]; }
-    [ExposedField] public Composite Intelligence = new(0);// { get => AbilityScores[(int)Data.Attribute.Intelligence]; }
-    [ExposedField] public Composite Wisdom = new(0);// { get => AbilityScores[(int)Data.Attribute.Wisdom]; }
-    [ExposedField] public Composite Charisma = new(0);// { get => AbilityScores[(int)Data.Attribute.Charisma]; }
+    [ExposedField] public Composite Strength = new("Strength", 0);// { get => AbilityScores[(int)Data.Attribute.Strength] + GetModifier("Str"); }
+    [ExposedField] public Composite Dexterity = new("Dexterity", 0);// { get => AbilityScores[(int)Data.Attribute.Dexterity] + GetModifier("Dex"); }
+    [ExposedField] public Composite Constitution = new("Constitution", 0);// { get => AbilityScores[(int)Data.Attribute.Constitution]; }
+    [ExposedField] public Composite Intelligence = new("Intelligence", 0);// { get => AbilityScores[(int)Data.Attribute.Intelligence]; }
+    [ExposedField] public Composite Wisdom = new("Wisdom", 0);// { get => AbilityScores[(int)Data.Attribute.Wisdom]; }
+    [ExposedField] public Composite Charisma = new("Charisma", 0);// { get => AbilityScores[(int)Data.Attribute.Charisma]; }
 
     [ExposedProperty] public int MaxHealth { get => Ancestry.Hitpoints + (Class.Health + Constitution.Squash().Total()) * Level; }
     [ExposedField] public int Health;
-    [ExposedField] public Composite AC = new(10, new List<string> { "Dexterity", "Level"});//, new List<Composite> { Dexterity });//{ get => 10 + Dexterity + Level; }
-    [ExposedField] public Composite Reflex = new(0, new List<string> { "Dexterity", "Level"});// { get => Dexterity + Level; }
-    [ExposedField] public Composite Will = new(0, new List<string> { "Wisdom", "Level" });
-    [ExposedField] public Composite Fortitude = new(0, new List<string> { "Constitution", "Level" });
+    [ExposedField] public Composite AC = new("AC", 10, new List<string> { "Dexterity", "Level"});//, new List<Composite> { Dexterity });//{ get => 10 + Dexterity + Level; }
+    [ExposedField] public Composite Reflex = new("Reflex", 0, new List<string> { "Dexterity", "Level"});// { get => Dexterity + Level; }
+    [ExposedField] public Composite Will = new("Will", 0, new List<string> { "Wisdom", "Level" });
+    [ExposedField] public Composite Fortitude = new("Fortitude", 0, new List<string> { "Constitution", "Level" });
     [ExposedProperty] public int Speed { get => Ancestry.Speed; }
 
     public Dictionary<GrantVision.VisionType, int> GetVisionTypes {

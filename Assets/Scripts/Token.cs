@@ -82,9 +82,10 @@ public class Token : MonoBehaviour
     public void Check()
     {
         Composite skill = ((Composite)typeof(CharacterData).GetField(SkillCheck.Skill).GetValue(Character));
-        RollData data = Dice.Check(SkillCheck.DC, skill);
+        print("Skill bonus: " + skill.Name + " " + skill.SquashModifiers().Count.ToString() + " " + skill.Squash().ToString() + " " + skill.Squash().Total().ToString());
+        RollWindow.Instance.UpdateVisuals(skill);
         //ChatLog.Instance.NewMessage(Character.name, data.Data.Total().ToString() + data.Result().ToString());
-        ChatLog.Instance.NewMessage(Character.name, data.ToString());
+        //ChatLog.Instance.NewMessage(Character.name, data.ToString());
     }
 
     // Update is called once per frame

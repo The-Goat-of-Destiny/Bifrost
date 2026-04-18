@@ -16,10 +16,10 @@ public static class Dice
         int total = roll + modifier;
 
 
-        return new RollData(roll, new Composite(), DC);
+        return new RollData(roll, new(), DC);
     }
 
-    public static RollData Check(int DC = 10, Composite stat = default)
+    public static RollData Check(int DC = 10, CompositePackage stat = default)
     {
         int roll = Roll(20);
 
@@ -31,12 +31,12 @@ public class RollData
 {
     // If roll is 0, then there must be an error
     public int Roll = 0;
-    public Composite Data = new(0);
+    public CompositePackage Data;
     public int DC = 10;
 
     public RollResult Result()
     {
-        int total = Roll + Data.Squash().Total();
+        int total = Roll + Data.Total();
         RollResult result;
         if (total <= DC - 10)
         {
@@ -65,7 +65,7 @@ public class RollData
         return result;
     }
 
-    public RollData(int roll, Composite stat, int dc)
+    public RollData(int roll, CompositePackage stat, int dc)
     {
         Roll = roll;
         Data = stat;
@@ -74,11 +74,11 @@ public class RollData
 
     public override string ToString()
     {
-        string result = (Roll + Data.Squash().Total()).ToString();
+        string result = (Roll + Data.Total()).ToString();
         if (Result() == RollResult.CritSuccess) result += "<color=#00FF00>";
         else if (Result() == RollResult.CritFail) result += "<color=#FF0000>";
         else result += "<color=#000000>";
-        result += ": " + Roll.ToString() + " + (" + Data.Squash().ToString() + ")";
+        result += ": " + Roll.ToString() + " + (" + Data.ToString() + ")";
         result += " vs " + DC.ToString() + ":\n";
         if (Result() == RollResult.CritSuccess) result += "Critical Success";
         else if (Result() == RollResult.Success) result += "Success";

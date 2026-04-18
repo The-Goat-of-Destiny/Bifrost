@@ -7,6 +7,7 @@ using UnityEngine;
 [Serializable]
 public class Composite
 {
+    public string Name = "Stat";
     public object Source;
 
     public int Base;
@@ -16,8 +17,9 @@ public class Composite
     [SerializeReference]
     public List<Modifier> RelevantModifiers = new();
 
-    public Composite(int _Base = 0, List<string> _Factors = default, List<string> _Context = default)
+    public Composite(string name = "Stat", int _Base = 0, List<string> _Factors = default, List<string> _Context = default)
     {
+        Name = name;
         Base = _Base;
         Factors = _Factors;
         if (_Factors is null)
@@ -36,9 +38,12 @@ public class Composite
     public virtual CompositePackage Squash()
     {
         int _base = 0;
-        int status = 0;
-        int circumstance = 0;
-        int item = 0;
+        int statusBonus = 0;
+        int statusPenalty = 0;
+        int circumstanceBonus = 0;
+        int circumstancePenalty = 0;
+        int itemBonus = 0;
+        int itemPenalty = 0;
         int untyped = 0;
         List<Modifier> modifiers = SquashModifiers();
         foreach (string factor in Factors)
@@ -55,35 +60,59 @@ public class Composite
         }
         foreach (Modifier modifier in modifiers)
         {
-            switch (modifier.Type)
+            if (modifier.Value > 0)
             {
-                case Modifier.ModType.Status:
-                    status = Mathf.Max(status, modifier.Value);
-                    break;
-                case Modifier.ModType.Circumstance:
-                    circumstance = Mathf.Max(circumstance, modifier.Value);
-                    break;
-                case Modifier.ModType.Item:
-                    item = Mathf.Max(item, modifier.Value);
-                    break;
-                default:
-                    untyped += modifier.Value;
-                    break;
+                switch (modifier.Type)
+                {
+                    case Modifier.ModType.Status:
+                        statusBonus = Mathf.Max(statusBonus, modifier.Value);
+                        break;
+                    case Modifier.ModType.Circumstance:
+                        circumstanceBonus = Mathf.Max(circumstanceBonus, modifier.Value);
+                        break;
+                    case Modifier.ModType.Item:
+                        itemBonus = Mathf.Max(itemBonus, modifier.Value);
+                        break;
+                    default:
+                        untyped += modifier.Value;
+                        break;
+                }
+            }
+            else
+            {
+                switch (modifier.Type)
+                {
+                    case Modifier.ModType.Status:
+                        statusPenalty = Mathf.Min(statusPenalty, modifier.Value);
+                        break;
+                    case Modifier.ModType.Circumstance:
+                        circumstancePenalty = Mathf.Min(circumstancePenalty, modifier.Value);
+                        break;
+                    case Modifier.ModType.Item:
+                        itemPenalty = Mathf.Min(itemPenalty, modifier.Value);
+                        break;
+                    default:
+                        untyped += modifier.Value;
+                        break;
+                }
             }
         }
-        return new CompositePackage(_base, status, circumstance, item, untyped);
+        return new CompositePackage(_base, statusBonus + statusPenalty, circumstanceBonus + circumstancePenalty, itemBonus + itemPenalty, untyped);
     }
 
     public List<Modifier> SquashModifiers()
     {
-        List<Modifier> modifiers = RelevantModifiers;
+        List<Modifier> modifiers = new();
+        modifiers.AddRange(RelevantModifiers);
+        //Debug.Log(Name + " " + modifiers.Count.ToString());
         foreach (string factor in Factors)
         {
             FieldInfo field = Source.GetType().GetField(factor);
             if (field.FieldType == typeof(Composite))
             {
                 Composite composite = (Composite)field.GetValue(Source);
-                modifiers.AddRange(composite.RelevantModifiers);
+                //modifiers.AddRange(composite.RelevantModifiers);
+                //Debug.Log(composite.Name + " " + modifiers.ToString());
                 modifiers.AddRange(composite.SquashModifiers());
             }
         }
@@ -100,7 +129,7 @@ public class ProfComposite : Composite
 {
     public Proficiency Proficiency;
 
-    public ProfComposite(int _Base = 0, Proficiency _Proficiency = Proficiency.Untrained, List<string> _Factors = null, List<string> _Context = null) : base(_Base, _Factors, _Context)
+    public ProfComposite(string name="Stat", int _Base = 0, Proficiency _Proficiency = Proficiency.Untrained, List<string> _Factors = null, List<string> _Context = null) : base(name, _Base, _Factors, _Context)
     {
         Proficiency = _Proficiency;
     }
@@ -123,7 +152,7 @@ public struct CompositePackage
         Untyped = untyped;
     }
 
-    public int Total()
+    public readonly int Total()
     {
         return Base + Status + Circumstance + Item + Untyped;
     }

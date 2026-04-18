@@ -34,4 +34,12 @@ public class Effect : ScriptableObject
             effect.RemoveFrom(character);
         }
     }
+
+    private void OnValidate()
+    {
+        foreach (RuleElement rule in RuleElements)
+        {
+            rule.Label = name;
+        }
+    }
 }

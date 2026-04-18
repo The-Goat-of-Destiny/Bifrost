@@ -6,6 +6,7 @@ using System.Reflection;
 [Serializable]
 public abstract class RuleElement
 {
+    public string Label = "";
     [SerializeReference]
     public List<Condition> Conditions = new();
     

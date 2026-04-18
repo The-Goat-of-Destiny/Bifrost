@@ -16,16 +16,25 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: b41ba0b6bfac131458d21f607b3b1209, type: 3}
   Description: 
   Riders: []
-  Modifiers: []
   RuleElements:
   - rid: 1956766982871449646
+  - rid: 1956767163538472961
   references:
     version: 2
     RefIds:
     - rid: 1956766982871449646
       type: {class: Modifier, ns: , asm: Assembly-CSharp}
       data:
+        Conditions: []
         Value: -1
         ScaleWithEffectValue: 1
         Type: 1
         Target: All
+    - rid: 1956767163538472961
+      type: {class: Modifier, ns: , asm: Assembly-CSharp}
+      data:
+        Conditions: []
+        Value: -1
+        ScaleWithEffectValue: 1
+        Type: 1
+        Target: Will
