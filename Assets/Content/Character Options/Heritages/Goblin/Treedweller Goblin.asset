@@ -16,6 +16,8 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 8d65f8165b13be94490ddbb75cb35dc2, type: 3}
   Level: 0
   Traits: 
+  Prerequisites:
+  - rid: 1956767163538472988
   Description: You have adapted particularly well to living in forested environments.
     As long as you are in a forest or jungle, you gain a +2 circumstance bonus to
     Stealth checks to Hide and Sneak, Survival checks to Subsist, and your Survival
@@ -32,6 +34,8 @@ MonoBehaviour:
     - rid: 1956766982871449668
       type: {class: Modifier, ns: , asm: Assembly-CSharp}
       data:
+        Label: 
+        Conditions: []
         Value: 2
         ScaleWithEffectValue: 0
         Type: 3
@@ -39,6 +43,8 @@ MonoBehaviour:
     - rid: 1956766982871449669
       type: {class: Modifier, ns: , asm: Assembly-CSharp}
       data:
+        Label: 
+        Conditions: []
         Value: 2
         ScaleWithEffectValue: 0
         Type: 3
@@ -46,7 +52,13 @@ MonoBehaviour:
     - rid: 1956766982871449670
       type: {class: Modifier, ns: , asm: Assembly-CSharp}
       data:
+        Label: 
+        Conditions: []
         Value: 2
         ScaleWithEffectValue: 0
         Type: 3
         Target: Survival to Cover Tracks
+    - rid: 1956767163538472988
+      type: {class: TraitRequirement, ns: , asm: Assembly-CSharp}
+      data:
+        Traits: cb000000

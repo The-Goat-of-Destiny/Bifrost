@@ -16,6 +16,8 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 246d562ecf4885d489ab658e0b7da7e8, type: 3}
   Level: 0
   Traits: 
+  Prerequisites:
+  - rid: 1956767163538472986
   Description: You are acclimated to living in frigid lands and have skin ranging
     from sky blue to navy in color, as well as blue fur. You gain cold resistance
     equal to half your level (minimum 1). You treat environmental cold effects as
@@ -31,6 +33,12 @@ MonoBehaviour:
     - rid: 1956766982871449667
       type: {class: ResistanceRule, ns: , asm: Assembly-CSharp}
       data:
+        Label: 
+        Conditions: []
         DamageType: Cold
         Resistance: 0
         Formula: 1/2 Level, min 1
+    - rid: 1956767163538472986
+      type: {class: TraitRequirement, ns: , asm: Assembly-CSharp}
+      data:
+        Traits: cb000000

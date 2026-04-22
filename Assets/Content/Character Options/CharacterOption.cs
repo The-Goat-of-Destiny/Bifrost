@@ -13,7 +13,7 @@ public class CharacterOption : ScriptableObject
     public List<Condition> Prerequisites = new();
 
     [TextArea]
-    [SerializeField] private string Description;
+    [SerializeField] protected string Description;
 
     public List<CharacterOption> GrantedFeatures = new();
     [SerializeReference]

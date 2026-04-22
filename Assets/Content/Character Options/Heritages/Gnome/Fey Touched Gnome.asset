@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db1221503a3b3784193986709a8fcebf, type: 3}
+  m_Name: Fey Touched Gnome
+  m_EditorClassIdentifier: 
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: 19dc1a0beb107ad47bfab102e704986e, type: 3}
+  Level: 0
+  Traits: 
+  Prerequisites:
+  - rid: 1956767163538472978
+  Description: The blood of the fey flows through your veins, saturating you with
+    their magic and making you truly one of them. You gain the fey trait, in addition
+    to the gnome and humanoid traits. Choose one cantrip from the primal spell list.
+    You can cast this spell as a primal innate spell at will. A cantrip is heightened
+    to a spell rank equal to half your level rounded up. You can change this cantrip
+    to a different one from the same list once per day by meditating to realign yourself
+    with the First World; this is a 10-minute activity that has the concentrate trait.
+  GrantedFeatures: []
+  RuleElements:
+  - rid: 1956767163538472999
+  Versatile: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 1956767163538472978
+      type: {class: TraitRequirement, ns: , asm: Assembly-CSharp}
+      data:
+        Traits: ca000000
+    - rid: 1956767163538472999
+      type: {class: TraitRule, ns: , asm: Assembly-CSharp}
+      data:
+        Label: 
+        Conditions: []
+        Traits: aa000000

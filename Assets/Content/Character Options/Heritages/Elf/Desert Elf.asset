@@ -16,6 +16,8 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 2ce6c5974e7688c47914e9b5630a9aa3, type: 3}
   Level: 0
   Traits: 
+  Prerequisites:
+  - rid: 1956767163538472979
   Description: You live under the desert's blazing heat, gaining incredible resilience
     to warm environments. You gain fire resistance equal to half your level (minimum
     1), and environmental heat effects are one step less extreme for you (incredible
@@ -30,6 +32,12 @@ MonoBehaviour:
     - rid: 1956766982871449659
       type: {class: ResistanceRule, ns: , asm: Assembly-CSharp}
       data:
+        Label: 
+        Conditions: []
         DamageType: Fire
         Resistance: 0
         Formula: 1/2 Level, min 1
+    - rid: 1956767163538472979
+      type: {class: TraitRequirement, ns: , asm: Assembly-CSharp}
+      data:
+        Traits: 95000000

@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: Gnome
   m_EditorClassIdentifier: 
   Rarity: 0
-  Icon: {fileID: 21300000, guid: afc52eb6b8851914980b5bc4d86b6681, type: 3}
+  Icon: {fileID: 21300000, guid: b5d0e922f515680438aef2048c26eff4, type: 3}
   Level: 0
   Traits: e60100005a000000e7000000ca000000
-  GrantedFeatures:
-  - {fileID: 11400000, guid: 8c531e326c26c8440bb9999ecf17f41c, type: 2}
+  Prerequisites: []
   Description: "Gnomes are short and hardy folk, with an unquenchable curiosity and
     eccentric habits.\r\n\r\nLong ago, early gnome ancestors emigrated from the First
     World, realm of the fey. While it's unclear why the first gnomes wandered to
@@ -32,6 +31,9 @@ MonoBehaviour:
     and wise survivors known as bleachlings.\r\n\r\nIf you want a character with
     boundless enthusiasm and an alien, fey outlook on morality and life, you should
     play a gnome."
+  GrantedFeatures:
+  - {fileID: 11400000, guid: 8c531e326c26c8440bb9999ecf17f41c, type: 2}
+  RuleElements: []
   Hitpoints: 8
   Size: 1
   Speed: 25
@@ -40,3 +42,6 @@ MonoBehaviour:
   AttributeFlaws: 00000000
   Languages: 000000000000000000000000
   AdditionalLanguages: 0
+  references:
+    version: 2
+    RefIds: []

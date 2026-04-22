@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d54f6a94bc0d994a8da32a492a937ed, type: 3}
+  m_Name: Calbreo
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 0}
+  Level: 0
+  Traits: 
+  Description: Demon Lord of Darkness
+  HealFont: 0
+  HarmFont: 1
+  Domains:
+  - {fileID: 11400000, guid: c5caf7c594c3bf345810b613e9d18e43, type: 2}
+  - {fileID: 11400000, guid: 3d47cfca628cd3e42b6c73b9007dbe26, type: 2}
+  - {fileID: 11400000, guid: ef90b8d44ac45cd4f8fb278426236395, type: 2}
+  - {fileID: 11400000, guid: 663466e197d10ea4f88ea7615579ac5f, type: 2}
+  AltDomains: []
+  ClericSpells:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

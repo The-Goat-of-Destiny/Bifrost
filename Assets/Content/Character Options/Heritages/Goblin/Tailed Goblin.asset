@@ -16,6 +16,8 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 18ff9ce541fa6ec4b8dc420514b54501, type: 3}
   Level: 0
   Traits: 
+  Prerequisites:
+  - rid: 1956767163538472987
   Description: You have a powerful tail, likely because you descend from a community
     of monkey goblins. You gain a +2 circumstance bonus to Athletics checks to Climb,
     you gain Combat Climber as a bonus feat, and you reduce the number of free hands
@@ -31,7 +33,13 @@ MonoBehaviour:
     - rid: 1956766982871449668
       type: {class: Modifier, ns: , asm: Assembly-CSharp}
       data:
+        Label: 
+        Conditions: []
         Value: 2
         ScaleWithEffectValue: 0
         Type: 3
         Target: Climb
+    - rid: 1956767163538472987
+      type: {class: TraitRequirement, ns: , asm: Assembly-CSharp}
+      data:
+        Traits: cb000000

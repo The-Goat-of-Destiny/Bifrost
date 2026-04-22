@@ -13,9 +13,13 @@ MonoBehaviour:
   m_Name: Champion's Deity
   m_EditorClassIdentifier: 
   Rarity: 0
-  Icon: {fileID: 21300000, guid: feb8709f10385a94095b55fe8d0f625c, type: 3}
+  Icon: {fileID: 21300000, guid: adc7897c09968cd4db8e34f45510467e, type: 3}
   Level: 0
   Traits: 
-  GrantedFeatures: []
+  Prerequisites: []
   Description: 
-  ruleElements: []
+  GrantedFeatures: []
+  RuleElements: []
+  references:
+    version: 2
+    RefIds: []

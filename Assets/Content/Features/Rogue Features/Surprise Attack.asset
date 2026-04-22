@@ -13,11 +13,15 @@ MonoBehaviour:
   m_Name: Surprise Attack
   m_EditorClassIdentifier: 
   Rarity: 0
-  Icon: {fileID: 21300000, guid: 3925691c2a021aa429c1dc89712a1253, type: 3}
+  Icon: {fileID: 21300000, guid: 10429d89ede2af3438d4907fe3283468, type: 3}
   Level: 0
   Traits: 
-  GrantedFeatures: []
+  Prerequisites: []
   Description: You spring into combat faster than foes can react. On the first round
     of combat, if you roll Deception or Stealth for initiative, creatures that haven't
     acted are off-guard to you.
-  ruleElements: []
+  GrantedFeatures: []
+  RuleElements: []
+  references:
+    version: 2
+    RefIds: []

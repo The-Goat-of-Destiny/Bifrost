@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f8d1cf5a8cb8bf4a979bbc409927a8a, type: 3}
+  m_Name: Invigorating Fear
+  m_EditorClassIdentifier: 
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: 1260cd4f20facff4da0e660ed6a6b519, type: 3}
+  Level: 0
+  Traits: 
+  Prerequisites: []
+  Description: 'Frequency once per hour
+
+    Requirements A creature within 60 feet
+    gains the frightened condition.
+
+    You are invigorated by the shock of a prank
+    or the thrum of terror. You gain temporary Hit Points equal to the creature''s
+    level or 3, whichever is higher. You lose any temporary Hit Points after 1 minute.'
+  GrantedFeatures: []
+  RuleElements: []
+  CostType: 2
+  ActionCost: 1
+  HasCheck: 0
+  Check:
+    TargettedDC: 1
+    DCProficiency: AC
+    Name: Flat Check
+    AbilityScore: None
+    ProficiencyName: None
+  references:
+    version: 2
+    RefIds: []

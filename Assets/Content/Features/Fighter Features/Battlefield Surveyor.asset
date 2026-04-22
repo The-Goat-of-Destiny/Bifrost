@@ -13,21 +13,16 @@ MonoBehaviour:
   m_Name: Battlefield Surveyor
   m_EditorClassIdentifier: 
   Rarity: 0
-  Icon: {fileID: 21300000, guid: b066c869b51f9384fa8ac9cce36b4648, type: 3}
+  Icon: {fileID: 21300000, guid: 09bdf554363219d4e89157bb886edb1f, type: 3}
   Level: 0
   Traits: 
-  GrantedFeatures: []
+  Prerequisites: []
   Description: Whether taking stock of an enemy army or simply standing guard, you
     excel at observing your foes. Your proficiency rank for Perception increases
     to master. In addition, you gain a +2 circumstance bonus to Perception checks
     for initiative, making you faster to react during combat.
-  ruleElements:
-  - rid: 1956766982871449624
+  GrantedFeatures: []
+  RuleElements: []
   references:
     version: 2
-    RefIds:
-    - rid: 1956766982871449624
-      type: {class: ProficiencyRule, ns: , asm: Assembly-CSharp}
-      data:
-        Target: Perception
-        proficiency: 3
+    RefIds: []

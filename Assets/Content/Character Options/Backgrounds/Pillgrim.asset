@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eab72fb2da098ce4e80ee001ecebb978, type: 3}
+  m_Name: Pillgrim
+  m_EditorClassIdentifier: 
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: 3e8be3455ce7a164592d0ad4f433b260, type: 3}
+  Level: 0
+  Traits: 
+  Prerequisites: []
+  Description: 'In your youth, you made several pilgrimages to important shrines
+    and sacred sites. You might have been a mendicant friar, a seller of religious
+    relics (real or fraudulent), or just a simple farmer following the dictates of
+    your faith. Whatever the aims of your wanderings now, your faith still protects
+    you on the road.
+
+    
+
+    Choose two attribute boosts. One must be to Wisdom
+    or Charisma, and one is a free attribute boost.
+
+    
+
+    You''re trained
+    in the Religion skill, and the Lore skill for your patron deity. You gain the
+    Pilgrim''s Token skill feat.'
+  GrantedFeatures:
+  - {fileID: 0}
+  RuleElements:
+  - rid: 1956767163538472994
+  - rid: 1956767163538472995
+  AttributeBoosts: 0500000003000000
+  FreeBoosts: 1
+  AttributeFlaws: 
+  references:
+    version: 2
+    RefIds:
+    - rid: 1956767163538472994
+      type: {class: ProficiencyRule, ns: , asm: Assembly-CSharp}
+      data:
+        Label: 
+        Conditions: []
+        Target: Religion
+        proficiency: 1
+    - rid: 1956767163538472995
+      type: {class: ProficiencyRule, ns: , asm: Assembly-CSharp}
+      data:
+        Label: 
+        Conditions: []
+        Target: Patron Deity Lore
+        proficiency: 1

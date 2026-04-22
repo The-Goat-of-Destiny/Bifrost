@@ -16,6 +16,8 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 297ae300f92e1bb41a6674e96b3f513d, type: 3}
   Level: 0
   Traits: 
+  Prerequisites:
+  - rid: 1956767163538472976
   Description: In your long life, you've dabbled in many paths and many styles. A
     typical ancient elf is at least 100 years old, though you might be younger at
     the GM's discretion. Choose a class other than your own. You gain the multiclass
@@ -26,4 +28,8 @@ MonoBehaviour:
   Versatile: 0
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 1956767163538472976
+      type: {class: TraitRequirement, ns: , asm: Assembly-CSharp}
+      data:
+        Traits: 95000000

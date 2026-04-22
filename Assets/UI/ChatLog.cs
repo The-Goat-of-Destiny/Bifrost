@@ -22,15 +22,15 @@ public class ChatLog : MonoBehaviour
         
     }
 
-    public void NewMessage(string Sender="", string Body = "")
+    public void NewMessage(CharacterData Sender=null, string Header = "", string Body = "")
     {
         Message newMessage = Instantiate(MessagePrefab, Layout);
-        newMessage.RefreshVisuals(Sender, Body);
+        newMessage.RefreshVisuals(Sender, Header, Body);
     }
 
     public void NewMessage(string Body = "")
     {
-        NewMessage("", Body);
+        NewMessage(null, "", Body);
     }
 
     public void NewMessage()
@@ -38,7 +38,7 @@ public class ChatLog : MonoBehaviour
         // Text evidently always has 1 more letter than expected, so checking if the length is greater than 1 means it is not empty
         if (ChatWindow.text.Length > 1)
         {
-            NewMessage("", ChatWindow.text);
+            NewMessage(null, ChatWindow.text);
         }
     }
 

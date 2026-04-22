@@ -12,17 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eab72fb2da098ce4e80ee001ecebb978, type: 3}
   m_Name: Reborn Soul
   m_EditorClassIdentifier: 
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: cc4eb1208b1a24a47949c4f3baf4b0dd, type: 3}
+  Level: 0
   Traits: 6b010000
+  Prerequisites: []
   Description: 'You were given a second opportunity at life by mysterious forces
     in the Lands of Second Souls. You remember your life before your death and now
     live with an extra lifetime of knowledge.
 
-    
 
-    Choose two ability boosts.
-    One must be to Constitution or Intelligence, and one is a free ability boost.
 
-    
+    Choose two ability boosts. One
+    must be to Constitution or Intelligence, and one is a free ability boost.
+
+
 
     You
     become trained in two Lore skills, which you and your GM choose from Lore skills
@@ -34,3 +38,27 @@ MonoBehaviour:
     past life. If you accept but fail the check, you''re stupefied 1 for 1 minute
     by the mental distraction of your past-life memories, or stupefied 2 for 1 minute
     on a critical failure.'
+  GrantedFeatures: []
+  RuleElements:
+  - rid: 1956767163538472996
+  - rid: 1956767163538472997
+  AttributeBoosts: 0200000004000000
+  FreeBoosts: 1
+  AttributeFlaws: 
+  references:
+    version: 2
+    RefIds:
+    - rid: 1956767163538472996
+      type: {class: ProficiencyRule, ns: , asm: Assembly-CSharp}
+      data:
+        Label: 
+        Conditions: []
+        Target: Background Lore 1
+        proficiency: 1
+    - rid: 1956767163538472997
+      type: {class: ProficiencyRule, ns: , asm: Assembly-CSharp}
+      data:
+        Label: 
+        Conditions: []
+        Target: Background Lore 2
+        proficiency: 1

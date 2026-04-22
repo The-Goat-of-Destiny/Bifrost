@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Grapple
   m_EditorClassIdentifier: 
   Rarity: 0
-  Icon: {fileID: 21300000, guid: c0c621637e6ca054cb6f00c56255ade7, type: 3}
+  Icon: {fileID: 21300000, guid: f1549c13b7c810a4fae49c3303eb6c72, type: 3}
   Level: 0
   Traits: 25000000
   Prerequisites: []
@@ -41,6 +41,13 @@ MonoBehaviour:
   RuleElements: []
   CostType: 0
   ActionCost: 1
+  HasCheck: 1
+  Check:
+    TargettedDC: 1
+    DCProficiency: Fortitude
+    Name: Grapple
+    AbilityScore: Strength
+    ProficiencyName: Athletics
   references:
     version: 2
     RefIds: []

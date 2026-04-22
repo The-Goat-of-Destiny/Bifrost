@@ -43,7 +43,7 @@ public class RollWindow : MonoBehaviour
         //ChatLog.Instance.NewMessage(RollBonus.ToString());
         gameObject.SetActive(false);
         RollData data = Dice.Check(DC, Stat);
-        ChatLog.Instance.NewMessage(character.name, data.ToString());
+        ChatLog.Instance.NewMessage(character, "", data.ToString());
     }
 
     // Update is called once per frame

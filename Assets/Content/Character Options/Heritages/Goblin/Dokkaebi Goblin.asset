@@ -16,6 +16,8 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 467bcbc0feac5d24abccc699f0218ed2, type: 3}
   Level: 0
   Traits: 
+  Prerequisites:
+  - rid: 1956767163538472983
   Description: Your ancestors mastered illusion-based magic, giving you an innate
     understanding of it. You can cast figment as an innate occult cantrip at will.
     A cantrip is heightened to a spell rank equal to half your level rounded up.
@@ -30,7 +32,13 @@ MonoBehaviour:
     - rid: 1956766982871449665
       type: {class: Modifier, ns: , asm: Assembly-CSharp}
       data:
+        Label: 
+        Conditions: []
         Value: 1
         ScaleWithEffectValue: 0
         Type: 3
         Target: Will vs Illusions
+    - rid: 1956767163538472983
+      type: {class: TraitRequirement, ns: , asm: Assembly-CSharp}
+      data:
+        Traits: cb000000

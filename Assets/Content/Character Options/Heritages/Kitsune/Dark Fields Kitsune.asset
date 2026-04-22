@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db1221503a3b3784193986709a8fcebf, type: 3}
+  m_Name: Dark Fields Kitsune
+  m_EditorClassIdentifier: 
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: 476a769a88cf5154fbc3d6697ba81135, type: 3}
+  Level: 0
+  Traits: 
+  Prerequisites:
+  - rid: 1956767163538473004
+  Description: You can exert your unsettling presence to subtly Demoralize others.
+    When you do, Demoralize loses the auditory trait and gains the visual trait,
+    and you don't take a penalty when you attempt to Demoralize a creature that doesn't
+    understand your language. You also gain the Invigorating Fear reaction. Your
+    alternate form is a fox, which has the statistics of 1st-level pest form.
+  GrantedFeatures:
+  - {fileID: 11400000, guid: d1a5cdbde3d6dc44faea18278511f57a, type: 2}
+  RuleElements: []
+  Versatile: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 1956767163538473004
+      type: {class: TraitRequirement, ns: , asm: Assembly-CSharp}
+      data:
+        Traits: 09010000

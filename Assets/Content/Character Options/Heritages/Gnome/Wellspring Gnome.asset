@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db1221503a3b3784193986709a8fcebf, type: 3}
+  m_Name: Wellspring Gnome
+  m_EditorClassIdentifier: 
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: cc437f309d2e00241820a8aca956e8ae, type: 3}
+  Level: 0
+  Traits: 
+  Prerequisites:
+  - rid: 1956767163538472978
+  Description: 'Some other source of magic has a greater hold on you than the primal
+    magic of your fey lineage does. This connection might come from an occult plane
+    or an ancient occult song; a deity, celestial, or fiend; magical effluent left
+    behind by a mage war; or ancient rune magic.
+
+    
+
+    Choose arcane, divine,
+    or occult. You gain one cantrip from that magical tradition''s spell list. You
+    can cast this spell as an innate spell at will, as a spell of your chosen tradition.
+    A cantrip is heightened to a spell rank equal to half your level rounded up.
+    Whenever you gain a primal innate spell from a gnome ancestry feat, change its
+    tradition from primal to your chosen tradition.'
+  GrantedFeatures: []
+  RuleElements: []
+  Versatile: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 1956767163538472978
+      type: {class: TraitRequirement, ns: , asm: Assembly-CSharp}
+      data:
+        Traits: ca000000

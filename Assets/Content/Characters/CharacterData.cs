@@ -14,6 +14,11 @@ public class CharacterData : ScriptableObject
     [ExposedField] public Background Background;
     [ExposedField] public Deity Deity;
 
+    /// <summary>
+    /// True if the shield is raised
+    /// </summary>
+    public bool ShieldRaised = false;
+
     public List<Data.Trait> Traits => Class.Traits.Union(Ancestry.Traits).Union(Heritage.Traits).Union(Background.Traits).ToList();
 
     public List<EffectInstance> Effects = new();
@@ -79,6 +84,8 @@ public class CharacterData : ScriptableObject
     [ExposedField] public Composite Wisdom = new("Wisdom", 0);// { get => AbilityScores[(int)Data.Attribute.Wisdom]; }
     [ExposedField] public Composite Charisma = new("Charisma", 0);// { get => AbilityScores[(int)Data.Attribute.Charisma]; }
 
+    public Dictionary<string, Proficiency> Proficiencies;
+
     [ExposedProperty] public int MaxHealth { get => Ancestry.Hitpoints + (Class.Health + Constitution.Squash().Total()) * Level; }
     [ExposedField] public int Health;
     [ExposedField] public Composite AC = new("AC", 10, new List<string> { "Dexterity", "Level"});//, new List<Composite> { Dexterity });//{ get => 10 + Dexterity + Level; }
@@ -98,6 +105,29 @@ public class CharacterData : ScriptableObject
                 visionTypes[field.GetValue().] = field.GetValue().;
             }
         }*/
+    }
+
+    public RollData Check(int DC, string checkName, string abilityScore, string skillProficiency)
+    {
+        int roll = Dice.Roll(20);
+        int ability = (int)typeof(CharacterData).GetField(abilityScore).GetValue(this);
+        Proficiency proficiency = Proficiencies[skillProficiency];
+
+        int proficiencyBonus = 0;
+        if (proficiency != Proficiency.Untrained)
+        {
+            proficiencyBonus = Level + (int)proficiency * 2;
+        }
+
+        int total = roll + ability + proficiencyBonus;
+
+        return new RollData(roll, new(ability, 0, 0, 0, proficiencyBonus), DC);
+    }
+
+    public int ProficiencyBonus(Proficiency proficiency)
+    {
+        if (proficiency == Proficiency.Untrained) return 0;
+        else return Level + (int)proficiency * 2;
     }
 
     private void OnValidate()

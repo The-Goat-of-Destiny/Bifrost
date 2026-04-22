@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class Message : MonoBehaviour
 {
-    public TMP_Text Sender;
+    public CharacterData Sender;
+    public TMP_Text Title;
+    public TMP_Text Header;
     public TMP_Text Body;
 
     // Start is called before the first frame update
@@ -14,9 +16,12 @@ public class Message : MonoBehaviour
         
     }
 
-    public void RefreshVisuals(string sender="", string body="")
+    public void RefreshVisuals(CharacterData sender, string header="", string body="")
     {
-        Sender.text = sender;
+        Sender = sender;
+        if (Sender != null) Title.text = sender.name;
+        Header.text = header;
+        Header.gameObject.SetActive(header != "");
         Body.text = body;
     }
 

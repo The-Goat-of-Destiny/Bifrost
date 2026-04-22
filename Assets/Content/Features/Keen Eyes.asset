@@ -13,25 +13,18 @@ MonoBehaviour:
   m_Name: Keen Eyes
   m_EditorClassIdentifier: 
   Rarity: 0
-  Icon: {fileID: 21300000, guid: 824a48daf7b55394e80e1df5048db839, type: 3}
+  Icon: {fileID: 21300000, guid: 1cdd4d6441c2c4342b738fd9a04b2d61, type: 3}
   Level: 0
   Traits: 
-  GrantedFeatures: []
+  Prerequisites: []
   Description: Your eyes are sharp, allowing you to make out small details about
     concealed or even invisible creatures that others might miss. You gain a +2 circumstance
     bonus when using the Seek action to find hidden or undetected creatures within
     30 feet of you. When you target an opponent that is concealed from you or hidden
     from you, reduce the DC of the flat check to 3 for a concealed target or 9 for
     a hidden one.
-  ruleElements:
-  - rid: 1956766982871449653
+  GrantedFeatures: []
+  RuleElements: []
   references:
     version: 2
-    RefIds:
-    - rid: 1956766982871449653
-      type: {class: Modifier, ns: , asm: Assembly-CSharp}
-      data:
-        Value: 2
-        ScaleWithEffectValue: 0
-        Type: 3
-        Target: Seek
+    RefIds: []

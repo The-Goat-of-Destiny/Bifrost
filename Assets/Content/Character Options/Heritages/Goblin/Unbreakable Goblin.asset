@@ -16,6 +16,8 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 1ecb4df4a76ecc84f8fe093cf131d5bd, type: 3}
   Level: 0
   Traits: 
+  Prerequisites:
+  - rid: 1956767163538472989
   Description: You're able to bounce back from injuries easily due to an exceptionally
     thick skull, cartilaginous bones, or some other mixed blessing. You gain 10 Hit
     Points from your ancestry instead of 6. When you fall, reduce the falling damage
@@ -30,7 +32,13 @@ MonoBehaviour:
     - rid: 1956766982871449671
       type: {class: Modifier, ns: , asm: Assembly-CSharp}
       data:
+        Label: 
+        Conditions: []
         Value: 4
         ScaleWithEffectValue: 0
         Type: 0
         Target: HP
+    - rid: 1956767163538472989
+      type: {class: TraitRequirement, ns: , asm: Assembly-CSharp}
+      data:
+        Traits: cb000000

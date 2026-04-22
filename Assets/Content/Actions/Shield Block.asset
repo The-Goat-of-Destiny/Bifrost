@@ -16,7 +16,8 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 1458237dbb3c6d54f8fe9d39c0175d00, type: 3}
   Level: 0
   Traits: 
-  Prerequisites: []
+  Prerequisites:
+  - rid: 1956767163538472974
   Description: "Trigger While you have your shield raised, you would take physical
     damage (bludgeoning, piercing, or slashing) from an attack.\r\nYou snap your
     shield in place to ward off a blow. Your shield prevents you from taking an amount
@@ -26,6 +27,16 @@ MonoBehaviour:
   RuleElements: []
   CostType: 2
   ActionCost: 1
+  HasCheck: 0
+  Check:
+    TargettedDC: 1
+    DCProficiency: AC
+    Name: Flat Check
+    AbilityScore: None
+    ProficiencyName: None
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 1956767163538472974
+      type: {class: ShieldRaisedRequirement, ns: , asm: Assembly-CSharp}
+      data: 

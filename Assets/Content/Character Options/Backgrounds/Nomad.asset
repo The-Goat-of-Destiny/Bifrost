@@ -12,4 +12,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eab72fb2da098ce4e80ee001ecebb978, type: 3}
   m_Name: Nomad
   m_EditorClassIdentifier: 
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: ad4ccfdb371ac3c4e8eaf6fa8b3d905c, type: 3}
+  Level: 0
   Traits: 
+  Prerequisites: []
+  Description: Traveling far and wide, you picked up basic tactics for surviving
+    on the road and in unknown lands, getting by with few supplies and even fewer
+    comforts. As an adventurer, you travel still, often into even more dangerous
+    places.
+  GrantedFeatures:
+  - {fileID: 11400000, guid: 2b2e116000acd7546bd4c381e1189340, type: 2}
+  RuleElements:
+  - rid: 1956767163538472994
+  - rid: 1956767163538472995
+  AttributeBoosts: 0200000003000000
+  FreeBoosts: 1
+  AttributeFlaws: 
+  references:
+    version: 2
+    RefIds:
+    - rid: 1956767163538472994
+      type: {class: ProficiencyRule, ns: , asm: Assembly-CSharp}
+      data:
+        Label: 
+        Conditions: []
+        Target: Survival
+        proficiency: 1
+    - rid: 1956767163538472995
+      type: {class: ProficiencyRule, ns: , asm: Assembly-CSharp}
+      data:
+        Label: 
+        Conditions: []
+        Target: Terrain Lore
+        proficiency: 1

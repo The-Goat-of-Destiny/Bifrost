@@ -16,6 +16,8 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: a0e239ca7595366439d3a550f24a0710, type: 3}
   Level: 0
   Traits: 
+  Prerequisites:
+  - rid: 1956767163538472985
   Description: Your family's teeth are formidable weapons. You gain a jaws unarmed
     attack that deals 1d6 piercing damage. Your jaws are in the brawling group and
     have the finesse and unarmed traits.
@@ -24,4 +26,8 @@ MonoBehaviour:
   Versatile: 0
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 1956767163538472985
+      type: {class: TraitRequirement, ns: , asm: Assembly-CSharp}
+      data:
+        Traits: cb000000

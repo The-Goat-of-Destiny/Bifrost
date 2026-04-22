@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eab72fb2da098ce4e80ee001ecebb978, type: 3}
+  m_Name: Academy Dropout
+  m_EditorClassIdentifier: 
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: af2d7aff0b529184aaa2c6f0198a295c, type: 3}
+  Level: 0
+  Traits: 5a000000
+  Prerequisites: []
+  Description: You were enrolled at a prestigious magical academy, but you've since
+    dropped out. Maybe there was a momentous incident, maybe you had to return to
+    other responsibilities, or perhaps it was just too much for you. Whatever the
+    case, your exit from the academy has shaped your life as much as your entrance
+    and led you to a life of adventure.
+  GrantedFeatures:
+  - {fileID: 11400000, guid: 6edddcaadd788da44a56bd1fb7a00058, type: 2}
+  RuleElements:
+  - rid: 1956767163538472990
+  - rid: 1956767163538472991
+  AttributeBoosts: 0400000005000000
+  FreeBoosts: 1
+  AttributeFlaws: 
+  references:
+    version: 2
+    RefIds:
+    - rid: 1956767163538472990
+      type: {class: ProficiencyRule, ns: , asm: Assembly-CSharp}
+      data:
+        Label: 
+        Conditions: []
+        Target: Arcana
+        proficiency: 1
+    - rid: 1956767163538472991
+      type: {class: ProficiencyRule, ns: , asm: Assembly-CSharp}
+      data:
+        Label: 
+        Conditions: []
+        Target: Academia Lore
+        proficiency: 1

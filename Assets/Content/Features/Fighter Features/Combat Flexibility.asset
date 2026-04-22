@@ -13,12 +13,16 @@ MonoBehaviour:
   m_Name: Combat Flexibility
   m_EditorClassIdentifier: 
   Rarity: 0
-  Icon: {fileID: 21300000, guid: 4d7635c366a76274c85747592d98d2f5, type: 3}
+  Icon: {fileID: 21300000, guid: 10429d89ede2af3438d4907fe3283468, type: 3}
   Level: 0
   Traits: 
-  GrantedFeatures: []
+  Prerequisites: []
   Description: You can prepare your tactics to suit different situations. When you
     make your daily preparations, you gain one fighter feat of 8th level or lower
     that you meet the prerequisites for and don't already have. You can use that
     feat until your next daily preparations.
-  ruleElements: []
+  GrantedFeatures: []
+  RuleElements: []
+  references:
+    version: 2
+    RefIds: []

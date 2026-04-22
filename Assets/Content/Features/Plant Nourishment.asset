@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Plant Nourishment
   m_EditorClassIdentifier: 
   Rarity: 0
-  Icon: {fileID: 21300000, guid: c3aab7237df394c4890e647a4ae580ea, type: 3}
+  Icon: {fileID: 21300000, guid: 0e3f9b811e33e674caa6c07b9712b0d9, type: 3}
   Level: 0
   Traits: 
-  GrantedFeatures: []
+  Prerequisites: []
   Description: You gain nourishment in the same way that the plants or fungi that
     match your body type normally do, through some combination of photosynthesis,
     absorbing minerals with your roots, or scavenging decaying matter. You typically
@@ -24,4 +24,8 @@ MonoBehaviour:
     sunlight for 1 week, you begin to starve. You can derive nourishment from specially
     formulated bottles of sunlight instead of natural sunlight, but these bottles
     cost 10 times as much as standard rations (or 40 sp).
-  ruleElements: []
+  GrantedFeatures: []
+  RuleElements: []
+  references:
+    version: 2
+    RefIds: []

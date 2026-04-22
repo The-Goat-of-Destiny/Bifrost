@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f8d1cf5a8cb8bf4a979bbc409927a8a, type: 3}
+  m_Name: Nudging Whisper
+  m_EditorClassIdentifier: 
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: 1004daa7515009d4ea9ae2e8b15feda7, type: 3}
+  Level: 0
+  Traits: 6d000000830000009700000020010000
+  Prerequisites: []
+  Description: "Activate\u2014Nudging Whisper [one-action] (curse, divine, emotion,
+    mental); Effect You lace your words with echoes of your ancestors\u2019 magic.
+    If your next action is to Request, you gain the effects of the Shameless Request
+    feat, and if your next action is to Lie, you gain the effects of the Confabulator
+    feat. If you critically fail at either check, the target and anyone who witnessed
+    you fail becomes immune to your Nudging Whisper for one day, though this doesn\u2019t
+    necessarily let them know that you attempted to charm them.\r\nYour alternate
+    form is a common Medium humanoid ancestry prevalent where you grew up (typically
+    human) called a tailless form."
+  GrantedFeatures: []
+  RuleElements: []
+  CostType: 0
+  ActionCost: 1
+  HasCheck: 0
+  Check:
+    TargettedDC: 1
+    DCProficiency: AC
+    Name: Flat Check
+    AbilityScore: None
+    ProficiencyName: None
+  references:
+    version: 2
+    RefIds: []

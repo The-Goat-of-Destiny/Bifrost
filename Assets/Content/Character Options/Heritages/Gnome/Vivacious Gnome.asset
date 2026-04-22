@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db1221503a3b3784193986709a8fcebf, type: 3}
+  m_Name: Vivacious Gnome
+  m_EditorClassIdentifier: 
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: bc060505bb13a3340b842c229d64ca9b, type: 3}
+  Level: 0
+  Traits: 
+  Prerequisites:
+  - rid: 1956767163538472978
+  Description: You have an incredibly strong connection to the positive energy that
+    flows through the First World, making it harder to attack your life force with
+    negative energy. You gain negative resistance equal to half your level (minimum
+    1). When you have the doomed condition, the condition affects you as if its value
+    was 1 lower than it actually is (doomed 1 has no effect, doomed 2 causes you
+    to die at dying 3, and so on).
+  GrantedFeatures: []
+  RuleElements:
+  - rid: 1956766982871449657
+  Versatile: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 1956766982871449657
+      type: {class: ResistanceRule, ns: , asm: Assembly-CSharp}
+      data:
+        Label: 
+        Conditions: []
+        DamageType: Void
+        Resistance: 0
+        Formula: 1/2 Level, Min 1
+    - rid: 1956767163538472978
+      type: {class: TraitRequirement, ns: , asm: Assembly-CSharp}
+      data:
+        Traits: ca000000

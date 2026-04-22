@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db1221503a3b3784193986709a8fcebf, type: 3}
+  m_Name: Palace Echoes Kitsune
+  m_EditorClassIdentifier: 
+  Rarity: 0
+  Icon: {fileID: 21300000, guid: 6aa139fc969f8844899ecaa346a0dec0, type: 3}
+  Level: 0
+  Traits: 
+  Prerequisites:
+  - rid: 1956767163538473004
+  Description: You descend from kitsune who possessed such compelling powers of persuasion
+    that they could walk into a palace at sunrise and end up as the power behind
+    the throne by nightfall. You gain the Nudging Whisper action.
+  GrantedFeatures:
+  - {fileID: 11400000, guid: 1f7e37163f22a95418af54a288d23976, type: 2}
+  RuleElements: []
+  Versatile: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 1956767163538473004
+      type: {class: TraitRequirement, ns: , asm: Assembly-CSharp}
+      data:
+        Traits: 09010000

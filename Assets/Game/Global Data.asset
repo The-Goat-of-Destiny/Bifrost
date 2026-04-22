@@ -29,6 +29,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d6d95a5ec5542ef48a8fa22a057a4556, type: 2}
   - {fileID: 11400000, guid: 0f81c8cf75b4dd84a97f9b89031dabf2, type: 2}
   Backgrounds:
+  - {fileID: 11400000, guid: 2a86900b2e18f51458a33ad7d38f5bb4, type: 2}
+  - {fileID: 11400000, guid: 1aa207c01ae44bb4e822f8754c35c0c0, type: 2}
+  - {fileID: 11400000, guid: 661f75d2d0baacb48a4884bde1b60fb8, type: 2}
   - {fileID: 11400000, guid: 302941405df05924d816ac3ad2dcbdf2, type: 2}
   - {fileID: 11400000, guid: 66259577ff08eb64e9f33ea2e1239092, type: 2}
   Deities:
@@ -185,3 +188,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 33e21dc7e53123144978a54cdc081b51, type: 2}
   - {fileID: 11400000, guid: 1ed26a71a83f4634aaed56af9321c39c, type: 2}
   - {fileID: 11400000, guid: eae6f946975570840a8029e6bab45080, type: 2}
+  - {fileID: 11400000, guid: 1336dcee247feab44b354aef5c5c49d1, type: 2}
+  - {fileID: 11400000, guid: 6afd1c722cbdfa24896a7477ba35d029, type: 2}
+  - {fileID: 11400000, guid: df2e8313276afad41823dc29e75f7316, type: 2}
+  - {fileID: 11400000, guid: 3908b27160db6b44886e479f867ab440, type: 2}
+  - {fileID: 11400000, guid: 1949f98273ed1f34ab7b7b385db5ccd6, type: 2}
+  - {fileID: 11400000, guid: 807ac2a33d717b3499e6b25414952449, type: 2}
+  - {fileID: 11400000, guid: 9d574a191472f524ba8f472196de3878, type: 2}
+  - {fileID: 11400000, guid: b0898585702140a47bfaf8df0ffbaead, type: 2}

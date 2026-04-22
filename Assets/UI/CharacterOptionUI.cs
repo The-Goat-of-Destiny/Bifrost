@@ -8,10 +8,10 @@ using UnityEngine.UI;
 public class CharacterOptionUI : MonoBehaviour
 {
     public Image Icon;
+    public TooltipInfo RequirementWidget;
     public TMP_Text Label;
     public Button EmptySlot;
     public GameObject FullSlot;
-    public CharacterOption SelectedOption;
 
     [SerializeField] private SelectionWindow SelectionWindowPrefab;
 
@@ -27,16 +27,27 @@ public class CharacterOptionUI : MonoBehaviour
 
     public void UpdateVisuals()
     {
-        if (SelectedOption || Field is null)
+        if (Field is null)
         {
             EmptySlot.gameObject.SetActive(false);
             FullSlot.SetActive(true);
         }
         else
         {
+            CharacterOption selectedOption = (Field.GetValue(CreatorContext.SelectedCharacter) as CharacterOption);
             EmptySlot.gameObject.SetActive(true);
-            Icon.sprite = (Field.GetValue(CreatorContext.SelectedCharacter) as CharacterOption)?.Icon;
-            Label.text = (Field.GetValue(CreatorContext.SelectedCharacter) as CharacterOption)?.name;
+            Icon.sprite = selectedOption.Icon;
+            Label.text = selectedOption.name;
+            if (selectedOption)
+            {
+                RequirementWidget.gameObject.SetActive(selectedOption.Prerequisites.Count != 0);
+                string requirementsText = "";
+                foreach (Condition condition in selectedOption.Prerequisites)
+                {
+                    requirementsText += condition.ToString() + "\n";
+                }
+                RequirementWidget.SetInfo("Requirements", requirementsText);
+            }
             FullSlot.SetActive(false);
         }
     }
